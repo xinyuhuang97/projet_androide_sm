@@ -10,15 +10,12 @@ pref_cote_des=s_f
 nb_opt=len(cote_optimal)
 nb_des=len(cote_dessimale)
 # Creation la liste de preference
-#print(cote_dessimale)
 list_pref_cote_opt=[]
 list_pref_cote_des=[]
 for i in range(nb_opt):
     l=[]
-    #print(cote_optimal)
     lp=pref_cote_opt[cote_optimal[i]][1]
     for j in range(nb_des):
-        #print(i)
         personne=cote_dessimale[j]
         index=lp.index(personne)
         score=nb_des-index
@@ -35,9 +32,6 @@ for i in range(nb_des):
         l.append(score)
     list_pref_cote_des.append(l)
 
-#print(pref_cote_opt)
-#print(pref_cote_des)
-#print(list_pref_cote_opt, list_pref_cote_des)
 nbvar=nb_opt*nb_des
 #1. somme sur j, xij<=1 un homme au plus une femme
 #2. somme sur i, xij<=1 une femme au plus une femme

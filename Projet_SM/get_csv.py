@@ -2,6 +2,9 @@ import json
 import urllib
 import requests
 
+"""
+Ask the database to save male and female name as json files and convert json files to csv files
+"""
 where = urllib.parse.quote_plus("""
 {
     "Gender": "male"
@@ -44,7 +47,6 @@ headers = {
     'X-Parse-Master-Key': '4LuCXgPPXXO2sU5cXm6WwpwzaKyZpo3Wpj4G4xXK' # This is the fake app's readonly master key
 }
 data = json.loads(requests.get(url, headers=headers).content.decode('utf-8')) # Here you have the data that you need
-#print(json.dumps(data, indent=2))
 with open('name_female.json', 'w', encoding='utf-8') as f:
     json.dump(data['results'], f, ensure_ascii=False, indent=4)
 
