@@ -35,6 +35,12 @@ L'algorithme le plus connu pour trouver une telle affectation est l'algorithme d
 
 
 ```python
+%load_ext autoreload
+%autoreload 2
+```
+
+
+```python
 import os 
 #if you want to know current working dir
 os.getcwd()
@@ -52,7 +58,7 @@ os.listdir()
      '.DS_Store',
      'study_test.py',
      'results.ipynb',
-     'tt.py',
+     'interface.py',
      'mogplex.py',
      'trash',
      'algo3.py',
@@ -66,8 +72,11 @@ os.listdir()
      '.ipynb_checkpoints',
      'name_female.json',
      '.git',
+     'error.txt',
      'main.py',
      'name_female.csv',
+     't.py',
+     'model.ilp',
      'get_csv.py']
 
 
@@ -144,7 +153,7 @@ for i in range(5,(size_S+1)):
     homme=max femme=range(1,max)
     1) temps de calcul en fonction de n (courbe temps de calcul)
     2) valeurs des algorithme alg1/alg4 .....
-        - moyenne, pire cas, courbe en fonction de n
+        - moyenne, pire cas, courbeen fonction de n
     3) ALGO4:
         xijt en reel ->relaxation continue
 
@@ -173,7 +182,7 @@ for i in range(5,(size_S+1)):
 
 
 
-    'print(lv1)\nplt.plot(S,lt1, label="algo1")\nplt.plot(S,lt2, label="algo1")\nplt.plot(S,lt3, label="algo1")\nplt.plot(S,lt4, label="algo1")\nplt.legend()\nplt.show()\n'
+    "\n1. codes utilisables (commente, readme, facilise pour l'utilisation->interface)\n2. test\n    n = 4\n    homme=max femme=range(1,max)\n    1) temps de calcul en fonction de n (courbe temps de calcul)\n    2) valeurs des algorithme alg1/alg4 .....\n        - moyenne, pire cas, courbeen fonction de n\n    3) ALGO4:\n        xijt en reel ->relaxation continue\n\n    18 mai/23,24 mai\n"
 
 
 
@@ -190,7 +199,7 @@ plt.show()
 
 
     
-![png](output_7_0.png)
+![png](output_8_0.png)
     
 
 
@@ -206,7 +215,7 @@ plt.show()
 
 
     
-![png](output_8_0.png)
+![png](output_9_0.png)
     
 
 
@@ -228,39 +237,47 @@ for l in [lv1, lv2, lv3, lv4]:
 
 
     
-![png](output_9_0.png)
+![png](output_10_0.png)
     
 
 
 
     
-![png](output_9_1.png)
+![png](output_10_1.png)
     
 
 
 
     
-![png](output_9_2.png)
+![png](output_10_2.png)
     
 
 
 
     
-![png](output_9_3.png)
+![png](output_10_3.png)
     
 
 
 
 ```python
-size_K=40
-size_S=40
+print(lv3, lv2)
+```
+
+    [[5, 4, 7, 8, 6], [8, 9, 6, 7, 8], [9, 7, 8, 10, 6], [9, 13, 10, 10, 12], [13, 12, 17, 11, 13], [11, 13, 12, 17, 10], [19, 17, 12, 16, 14], [13, 21, 22, 16, 22], [19, 20, 27, 21, 21], [22, 18, 17, 18, 24], [23, 25, 26, 24, 22], [29, 18, 25, 28, 25], [32, 20, 26, 29, 21], [25, 31, 27, 26, 27], [28, 27, 37, 28, 30], [34, 41, 29, 35, 34]] [[5, 4, 7, 8, 6], [8, 9, 6, 7, 8], [9, 7, 8, 10, 6], [9, 13, 10, 10, 12], [13, 12, 17, 11, 13], [11, 13, 12, 17, 10], [19, 17, 12, 16, 14], [13, 21, 22, 16, 22], [19, 20, 27, 21, 21], [22, 18, 17, 18, 24], [23, 25, 26, 24, 22], [29, 18, 25, 28, 25], [32, 20, 26, 29, 21], [25, 31, 27, 26, 27], [28, 27, 37, 28, 30], [34, 41, 29, 35, 34]]
+
+
+
+```python
+size_K=20
+size_S=20
 
 
 
 new_lt=[]
 new_lv=[]
 
-nb_for_generation=5
+nb_for_generation=1
 for i in range(5,(size_S+1)):
     K=[i]*i
     S=[j for j in range(1,i+1)]
@@ -268,18 +285,18 @@ for i in range(5,(size_S+1)):
     t=[]
     sl1new=[]
     import sys
-    save_stdout = sys.stdout
-    sys.stdout = open('trash', 'w')
+    #save_stdout = sys.stdout
+    #sys.stdout = open('trash', 'w')
     for j in range(nb_for_generation):
         female,male,s_f,s_m=gennere_set_f_m(i,i)
         ins=genere_instance(K,S, male, female, s_m, s_f)
         start = time.time()
-        res1=calcul_difference_entre_gen(algo_1(deepcopy(ins)))
+        res1=calcul_difference_entre_gen(algo_3(deepcopy(ins)))
         stop = time.time()
         t.append(stop-start)
         sl1new.append(res1)
 
-    sys.stdout = save_stdout
+    #sys.stdout = save_stdout
     print("i==",i)
     new_lv.append(sl1new)
     new_lt.append(np.mean(t))
@@ -301,26 +318,6 @@ for i in range(5,(size_S+1)):
     i== 18
     i== 19
     i== 20
-    i== 21
-    i== 22
-    i== 23
-    i== 24
-    i== 25
-    i== 26
-    i== 27
-    i== 28
-    i== 29
-    i== 30
-    i== 31
-    i== 32
-    i== 33
-    i== 34
-    i== 35
-    i== 36
-    i== 37
-    i== 38
-    i== 39
-    i== 40
 
 
 
@@ -335,7 +332,7 @@ plt.show()
 
 
     
-![png](output_11_0.png)
+![png](output_13_0.png)
     
 
 
@@ -414,7 +411,7 @@ plt.show()
 
 
     
-![png](output_13_0.png)
+![png](output_15_0.png)
     
 
 
@@ -445,6 +442,60 @@ def alg_4_relaxation(list_instance):
         - xijt>=0
         - xijt<=1
         - for all t sum xij should be == to min(nbmale, nbfemale)
+    #Advantage:
+        -Comparer a l'algo iterative, resoudre le problem en une seule iteration
+        -Resoudre le problem de facon gloable qui minimise la difference gloable
+
+    :return : value of difference of couples betweens generations
+    """
+    """
+    :param :list_instance : list of qua-tuplets contaning
+        - male_i/female_i : list of males/females for t=i
+        - pm_i/pf_i : dictionary of preference for t=i
+    Principe de l'algo:
+    #Methode: PL
+    #Variable:
+        - x_{ij}^{t} -> variable xij a l'instant t
+        - z_{ij}^{t} valeur a minimiser
+    #Valeur de variable:
+        - 1 si xij forme une couple a l'instant t
+        - 0 sinon
+    #Fonction objective:
+        Min sum zijt
+    #Contraintes:
+        - pour tout t, sum xij sur i ou j soit inf a 1 (mariage)
+        - zijt>=xijt - xij{t-1}
+        - zijt>=0
+        - xijt>=0
+        - xijt<=1
+        - stabilite
+    #Advantage:
+        -Comparer a l'algo iterative, resoudre le problem en une seule iteration
+        -Resoudre le problem de facon gloable qui minimise la difference gloable
+
+    :return : value of difference of couples betweens generations
+    """
+    """
+    :param :list_instance : list of qua-tuplets contaning
+        - male_i/female_i : list of males/females for t=i
+        - pm_i/pf_i : dictionary of preference for t=i
+    Principe de l'algo:
+    #Methode: PL
+    #Variable:
+        - x_{ij}^{t} -> variable xij a l'instant t
+        - z_{ij}^{t} valeur a minimiser
+    #Valeur de variable:
+        - 1 si xij forme une couple a l'instant t
+        - 0 sinon
+    #Fonction objective:
+        Min sum zijt
+    #Contraintes:
+        - pour tout t, sum xij sur i ou j soit inf a 1 (mariage)
+        - zijt>=xijt - xij{t-1}
+        - zijt>=0
+        - xijt>=0
+        - xijt<=1
+        - stabilite
     #Advantage:
         -Comparer a l'algo iterative, resoudre le problem en une seule iteration
         -Resoudre le problem de facon gloable qui minimise la difference gloable
@@ -482,7 +533,6 @@ def alg_4_relaxation(list_instance):
         sous_matrix=[]
         for k in range(nb_f):
             if (list_m[j],list_f[k]) in mariage_avant:
-                print(male_i[j],female_i[k])
                 sous_matrix.append(1)
             else:
                 sous_matrix.append(0)
@@ -490,12 +540,20 @@ def alg_4_relaxation(list_instance):
 
     #number of variable :xijt and zijt and t should be duree_t-1 because we generated manuelly the first generation
     nbvar=nb_m*nb_f*(duree_t-1)*2
-    nbcont=nb_m*duree_t + nb_f*duree_t + nb_m*nb_f*(duree_t-1)*2 +nb_m*nb_f*duree_t
+    #nbcont=nb_m*duree_t + nb_f*duree_t + nb_m*nb_f*(duree_t-1)*2 +nb_m*nb_f*duree_t
+
+    """cc=0
+    for t in range(duree_t-1):
+        male_i,female_i,pm_i, pf_i=list_instance[t+1]
+        for i in range(len(male_i)):
+            for j in range(len(female_i)):
+                cc+=1
+    nbcont=nb_m*(duree_t-1) + nb_f*(duree_t-1) +  nb_m*nb_f*(duree_t-1)*2 +cc#+nb_m*nb_f*duree_t
+    """
 
 
-
-    lignes = range(nbcont)
-    colonnes = range(nbvar)
+    #lignes = range(nbcont)
+    #colonnes = range(nbvar)
     m = Model("mogplex")
 
     # declaration variables de decision
@@ -564,12 +622,36 @@ def alg_4_relaxation(list_instance):
                 m.addConstr(x[i+nb_m][j][t] >= 0, "Contrainte%d" % i)
 
     #4)- for all t sum xij should be == to min(nbmale, nbfemale)
-    for t in range(duree_t-1):
+    """for t in range(duree_t-1):
         a,b,_,_=list_instance[t]
         valmin=min(len(a),len(b))
         print(valmin)
         m.addConstr(quicksum(x[i][j][t] for i in [x for x in range(nb_m)] for j in [ y for y in range(nb_f)] ) <=valmin, "Contrainte%d" % i)
         m.addConstr(quicksum(x[i][j][t] for i in [x for x in range(nb_m)] for j in [ y for y in range(nb_f)] ) >=valmin, "Contrainte%d" % i)
+    """
+    for t in range(duree_t-1):
+        male_i,female_i,pm_i, pf_i=list_instance[t+1]
+        for i in range(len(male_i)):
+            for j in range(len(female_i)):
+                homme=male_i[i]
+                femme=female_i[j]
+                index_femme=list_f.index(femme)
+                index_homme=list_m.index(homme)
+                list_index=[(index_homme, index_femme)]
+                v_pref_m_f=pm_i[homme][1].index(femme)
+                v_pref_f_m=pf_i[femme][1].index(homme)
+                for k in range(len(male_i)):
+                    new_homme=male_i[k]
+                    if pf_i[femme][1].index(new_homme)<v_pref_f_m:
+                        index_new_homme=list_m.index(new_homme)
+                        list_index.append( (index_new_homme, index_femme) )
+                for l in range(len(female_i)):
+                    new_femme=female_i[l]
+                    if pm_i[homme][1].index(new_femme)<v_pref_m_f:
+                        index_new_femme=list_f.index(new_femme)
+                        list_index.append( (index_homme, index_new_femme) )
+                list_index=list(set(list_index))
+                m.addConstr(quicksum(x[i][j][t] for i,j in list_index) >= 1, "Contrainte%d" % i)
 
     m.optimize()
 
@@ -644,8 +726,8 @@ print(new_lv1)
 print(new_lv2)
 ```
 
-    [[3, 3, 3, 3, 3], [4, 4, 4, 4, 4], [5, 5, 5, 5, 5], [6, 6, 6, 6, 6], [7, 7, 7, 7, 7], [8, 8, 8, 8, 8], [9, 9, 9, 9, 9], [10, 10, 10, 10, 10], [11, 11, 11, 11, 11], [12, 12, 12, 12, 12], [13, 13, 13, 13, 13], [14, 14, 14, 14, 14], [15, 15, 15, 15, 15], [16, 16, 16, 16, 16], [17, 17, 17, 17, 17], [18, 18, 18, 18, 18]]
-    [[3, 3, 3, 3, 3], [4, 4, 4, 4, 4], [5, 5, 5, 5, 5], [6, 6, 6, 6, 6], [7, 7, 7, 6, 7], [8, 7, 8, 8, 7], [9, 9, 9, 9, 9], [10, 10, 10, 10, 10], [10, 11, 10, 11, 11], [12, 12, 12, 12, 11], [13, 12, 13, 12, 13], [14, 13, 14, 13, 14], [14, 15, 15, 15, 14], [15, 16, 16, 16, 16], [17, 16, 17, 17, 16], [18, 17, 18, 18, 17]]
+    [[6, 8, 6, 6, 8], [6, 8, 6, 7, 7], [11, 9, 8, 8, 8], [8, 9, 8, 13, 10], [11, 11, 12, 16, 10], [10, 15, 16, 14, 11], [17, 15, 17, 20, 16], [15, 20, 18, 20, 20], [21, 23, 16, 25, 22], [24, 20, 15, 24, 21], [23, 30, 25, 21, 23], [26, 19, 23, 28, 30], [28, 28, 26, 28, 21], [30, 28, 33, 31, 28], [38, 23, 26, 30, 26], [38, 34, 33, 25, 25]]
+    [[6, 8, 6, 6, 8], [6, 8, 6, 7, 7], [11, 9, 8, 8, 8], [8, 9, 8, 13, 10], [11, 11, 12, 16, 10], [10, 15, 16, 14, 11], [17, 15, 17, 20, 16], [15, 20, 18, 20, 20], [21, 23, 16, 25, 22], [24, 20, 15, 24, 21], [23, 30, 25, 21, 23], [26, 19, 23, 28, 30], [28, 28, 26, 28, 21], [30, 28, 33, 31, 28], [38, 23, 26, 30, 26], [38, 34, 33, 25, 25]]
 
 
 
@@ -658,21 +740,33 @@ min_v1=np.min(new_lv1,axis=1)
 max_v2=np.max(new_lv2,axis=1)
 min_v2=np.min(new_lv2,axis=1)
 
-plt.fill_between(Lg, max_v1,min_v1, alpha=0.25, linewidth=0,)
-plt.plot(Lg,np.mean(new_lv1,axis=1))
+#plt.fill_between(Lg, max_v1,min_v1, alpha=0.25, linewidth=0,)
+plt.plot(Lg,np.mean(new_lv1,axis=1),label="algo4")
+plt.xlabel("size")
+plt.ylabel("value")
+plt.legend()
+plt.show()
 
-plt.fill_between(Lg, max_v2,min_v2, alpha=0.25, linewidth=0,)
-plt.plot(Lg,np.mean(new_lv2,axis=1))
+
+#plt.fill_between(Lg, max_v2,min_v2, alpha=0.25, linewidth=0,)
+plt.plot(Lg,np.mean(new_lv2,axis=1),label="algo4_relaxation")
 plt.title("algo"+str(nb_algo))
 plt.xlabel("size")
 plt.ylabel("value")
+plt.legend()
 plt.show()
-nb_algo+=1
+
 ```
 
 
     
-![png](output_17_0.png)
+![png](output_19_0.png)
+    
+
+
+
+    
+![png](output_19_1.png)
     
 
 

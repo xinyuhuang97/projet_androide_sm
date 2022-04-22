@@ -7,9 +7,8 @@ from algo4 import *
 from copy import deepcopy
 
 # Get liste of male/female name
-name_male=pd.read_csv('./name_male.csv')['Name'].unique()
-name_female=pd.read_csv('./name_female.csv')['Name'].unique()
-
+name_male=list(pd.read_csv('./name_male.csv')['Name'].unique())
+name_female=list(pd.read_csv('./name_female.csv')['Name'].unique())
 
 def gennere_set_f_m(dim1,dim2=0):
     """
@@ -28,9 +27,8 @@ def gennere_set_f_m(dim1,dim2=0):
     s_f=dict()
     s_m=dict()
     # Genarate list of males/females
-    female=random.choices(name_female, k=dim1)
-    male=random.choices(name_male, k=dim2)
-
+    female=random.sample(name_female, k=dim1)
+    male=random.sample(name_male, k=dim2)
     # Two loop to generate two dictionnaries
     for i in range(dim1):
         x=male.copy()

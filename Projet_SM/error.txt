@@ -1,3 +1,67 @@
+Maximize
+  <gurobi.LinExpr: x11>
+Subject To
+  Contrainte0: <gurobi.LinExpr: x11 + x12> <= 1
+  Contrainte1: <gurobi.LinExpr: x21 + x22> <= 1
+  Contrainte2: <gurobi.LinExpr: x31 + x32> <= 1
+  Contrainte3: <gurobi.LinExpr: x41 + x42> <= 1
+  Contrainte4: <gurobi.LinExpr: x51 + x52> <= 1
+  Contrainte5: <gurobi.LinExpr: x61 + x62> <= 1
+  Contrainte6: <gurobi.LinExpr: x71 + x72> <= 1
+  Contrainte7: <gurobi.LinExpr: x11 + x21 + x31 + x41 + x51 + x61 + x71> <= 1
+  Contrainte8: <gurobi.LinExpr: x12 + x22 + x32 + x42 + x52 + x62 + x72> <= 1
+  Contrainte9: <gurobi.LinExpr: x11> >= 0
+  Contrainte10: <gurobi.LinExpr: x11> <= 1
+  Contrainte11: <gurobi.LinExpr: x12> >= 0
+  Contrainte12: <gurobi.LinExpr: x12> <= 1
+  Contrainte13: <gurobi.LinExpr: x21> >= 0
+  Contrainte14: <gurobi.LinExpr: x21> <= 1
+  Contrainte15: <gurobi.LinExpr: x22> >= 0
+  Contrainte16: <gurobi.LinExpr: x22> <= 1
+  Contrainte17: <gurobi.LinExpr: x31> >= 0
+  Contrainte18: <gurobi.LinExpr: x31> <= 1
+  Contrainte19: <gurobi.LinExpr: x32> >= 0
+  Contrainte20: <gurobi.LinExpr: x32> <= 1
+  Contrainte21: <gurobi.LinExpr: x41> >= 0
+  Contrainte22: <gurobi.LinExpr: x41> <= 1
+  Contrainte23: <gurobi.LinExpr: x42> >= 0
+  Contrainte24: <gurobi.LinExpr: x42> <= 1
+  Contrainte25: <gurobi.LinExpr: x51> >= 0
+  Contrainte26: <gurobi.LinExpr: x51> <= 1
+  Contrainte27: <gurobi.LinExpr: x52> >= 0
+  Contrainte28: <gurobi.LinExpr: x52> <= 1
+  Contrainte29: <gurobi.LinExpr: x61> >= 0
+  Contrainte30: <gurobi.LinExpr: x61> <= 1
+  Contrainte31: <gurobi.LinExpr: x62> >= 0
+  Contrainte32: <gurobi.LinExpr: x62> <= 1
+  Contrainte33: <gurobi.LinExpr: x71> >= 0
+  Contrainte34: <gurobi.LinExpr: x71> <= 1
+  Contrainte35: <gurobi.LinExpr: x72> >= 0
+  Contrainte36: <gurobi.LinExpr: x72> <= 1
+  Contrainte37: <gurobi.LinExpr: x11 + x12> >= 1
+  Contrainte38: <gurobi.LinExpr: x12> >= 1
+  Contrainte39: <gurobi.LinExpr: x11 + x21 + x22 + x31 + x41 + x51 + x61 + x71> >= 1
+  Contrainte40: <gurobi.LinExpr: x12 + x22> >= 1
+  Contrainte41: <gurobi.LinExpr: x11 + x31 + x32 + x51 + x61> >= 1
+  Contrainte42: <gurobi.LinExpr: x12 + x22 + x32 + x42 + x52 + x62 + x72> >= 1
+  Contrainte43: <gurobi.LinExpr: x11 + x31 + x41 + x51 + x61 + x71> >= 1
+  Contrainte44: <gurobi.LinExpr: x12 + x22 + x41 + x42 + x52 + x62 + x72> >= 1
+  Contrainte45: <gurobi.LinExpr: x11 + x51> >= 1
+  Contrainte46: <gurobi.LinExpr: x12 + x22 + x51 + x52> >= 1
+  Contrainte47: <gurobi.LinExpr: x11 + x61> >= 1
+  Contrainte48: <gurobi.LinExpr: x12 + x22 + x61 + x62> >= 1
+  Contrainte49: <gurobi.LinExpr: x11 + x31 + x51 + x61 + x71> >= 1
+  Contrainte50: <gurobi.LinExpr: x12 + x22 + x52 + x62 + x71 + x72> >= 1
+Binaries
+['x11', 'x12', 'x21', 'x22', 'x31', 'x32', 'x41', 'x42', 'x51', 'x52', 'x61', 'x62',
+ 'x71', 'x72']
+
+x12=1
+x51=1
+
+
+
+
 from gurobipy import *
 from gs import Gale_Shapley
 import pandas as pd
@@ -99,7 +163,7 @@ def prog_lineaire(list_instance):
         for i in range(len(male_i)):
             for j in range(len(female_i)):
                 list_index=[(i,j)]
-                #check=[(i,j)]
+                check=[(i,j)]
                 homme=male_i[i]
                 femme=female_i[j]
                 v_pref_m_f=pm_i[homme][1].index(femme)
@@ -110,30 +174,26 @@ def prog_lineaire(list_instance):
                     #print("indice",pf_i[femme][1].index(new_homme),v_pref_f_m, new_homme, homme,k,i)
                     if pf_i[femme][1].index(new_homme)<v_pref_f_m:
                         list_index.append( (k, j) )
-                    """
                     if pf_i[femme][1].index(new_homme)<=v_pref_f_m:
-                        print(pf_i[femme][1])
                         print("indice",pf_i[femme][1].index(new_homme),v_pref_f_m, new_homme, homme, k, j, i, j)
                         check.append( (k, j) )
                     print("=======male======")
                     print(list(set(list_index)))
-                    print(list(set(check)))"""
+                    print(list(set(check)))
                 for l in range(len(female_i)):
                     new_femme=female_i[l]
                     #print("indice",pm_i[homme][1].index(new_femme),v_pref_m_f, new_femme, femme)
                     if pm_i[homme][1].index(new_femme)<v_pref_m_f:
                         list_index.append( (i, l) )
-                    """
                     if pm_i[homme][1].index(new_femme)<=v_pref_m_f:
-                        print(pm_i[homme][1])
                         print("indice",pm_i[homme][1].index(new_femme),v_pref_m_f, new_femme, femme, i, l, i, j)
                         check.append( (i, l) )
                     print("=======female======")
                     print(list(set(list_index)))
-                    print(list(set(check)))"""
+                    print(list(set(check)))
 
                 list_index=list(set(list_index))
-                #check=list(set(check))
+                check=list(set(check))
                 #print("list_index",list_index)
                 #print("check", check)
                 m.addConstr(quicksum(x[m][n] for m,n in list_index) >= 1, "Contrainte%d" % counter)
@@ -144,7 +204,6 @@ def prog_lineaire(list_instance):
         m.optimize()
         sys.stdout = save_stdout
         render=0
-        
         if render==1:
             status = m.status
             varInfo = [(v.varName, v.LB, v.UB) for v in m.getVars() ] # use list comprehension

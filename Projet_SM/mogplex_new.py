@@ -1,6 +1,6 @@
 from gurobipy import *
 from sm import gennere_set_f_m
-female,male,s_f,s_m=gennere_set_f_m(5,6)
+female,male,s_f,s_m=gennere_set_f_m(17,20)
 cote_optimal=male
 pref_cote_opt=s_m
 cote_dessimale=female

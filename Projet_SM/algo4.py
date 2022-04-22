@@ -22,7 +22,7 @@ def prog_lineaire_advance(list_instance):
         - zijt>=0
         - xijt>=0
         - xijt<=1
-        - for all t sum xij should be == to min(nbmale, nbfemale)
+        - stabilite
     #Advantage:
         -Comparer a l'algo iterative, resoudre le problem en une seule iteration
         -Resoudre le problem de facon gloable qui minimise la difference gloable
@@ -60,7 +60,6 @@ def prog_lineaire_advance(list_instance):
         sous_matrix=[]
         for k in range(nb_f):
             if (list_m[j],list_f[k]) in mariage_avant:
-                print(male_i[j],female_i[k])
                 sous_matrix.append(1)
             else:
                 sous_matrix.append(0)
@@ -68,12 +67,20 @@ def prog_lineaire_advance(list_instance):
 
     #number of variable :xijt and zijt and t should be duree_t-1 because we generated manuelly the first generation
     nbvar=nb_m*nb_f*(duree_t-1)*2
-    nbcont=nb_m*duree_t + nb_f*duree_t + nb_m*nb_f*(duree_t-1)*2 +nb_m*nb_f*duree_t
+    #nbcont=nb_m*duree_t + nb_f*duree_t + nb_m*nb_f*(duree_t-1)*2 +nb_m*nb_f*duree_t
+
+    """cc=0
+    for t in range(duree_t-1):
+        male_i,female_i,pm_i, pf_i=list_instance[t+1]
+        for i in range(len(male_i)):
+            for j in range(len(female_i)):
+                cc+=1
+    nbcont=nb_m*(duree_t-1) + nb_f*(duree_t-1) +  nb_m*nb_f*(duree_t-1)*2 +cc#+nb_m*nb_f*duree_t
+    """
 
 
-
-    lignes = range(nbcont)
-    colonnes = range(nbvar)
+    #lignes = range(nbcont)
+    #colonnes = range(nbvar)
     m = Model("mogplex")
 
     # declaration variables de decision
@@ -142,12 +149,36 @@ def prog_lineaire_advance(list_instance):
                 m.addConstr(x[i+nb_m][j][t] >= 0, "Contrainte%d" % i)
 
     #4)- for all t sum xij should be == to min(nbmale, nbfemale)
-    for t in range(duree_t-1):
+    """for t in range(duree_t-1):
         a,b,_,_=list_instance[t]
         valmin=min(len(a),len(b))
         print(valmin)
         m.addConstr(quicksum(x[i][j][t] for i in [x for x in range(nb_m)] for j in [ y for y in range(nb_f)] ) <=valmin, "Contrainte%d" % i)
         m.addConstr(quicksum(x[i][j][t] for i in [x for x in range(nb_m)] for j in [ y for y in range(nb_f)] ) >=valmin, "Contrainte%d" % i)
+    """
+    for t in range(duree_t-1):
+        male_i,female_i,pm_i, pf_i=list_instance[t+1]
+        for i in range(len(male_i)):
+            for j in range(len(female_i)):
+                homme=male_i[i]
+                femme=female_i[j]
+                index_femme=list_f.index(femme)
+                index_homme=list_m.index(homme)
+                list_index=[(index_homme, index_femme)]
+                v_pref_m_f=pm_i[homme][1].index(femme)
+                v_pref_f_m=pf_i[femme][1].index(homme)
+                for k in range(len(male_i)):
+                    new_homme=male_i[k]
+                    if pf_i[femme][1].index(new_homme)<v_pref_f_m:
+                        index_new_homme=list_m.index(new_homme)
+                        list_index.append( (index_new_homme, index_femme) )
+                for l in range(len(female_i)):
+                    new_femme=female_i[l]
+                    if pm_i[homme][1].index(new_femme)<v_pref_m_f:
+                        index_new_femme=list_f.index(new_femme)
+                        list_index.append( (index_homme, index_new_femme) )
+                list_index=list(set(list_index))
+                m.addConstr(quicksum(x[i][j][t] for i,j in list_index) >= 1, "Contrainte%d" % i)
 
     m.optimize()
 

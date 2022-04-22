@@ -1,4 +1,5 @@
-def Gale_Shapley(female,male,pref_f,pref_m,optimal=0):
+from copy import deepcopy
+def Gale_Shapley(female,male,pref_f,pref_m,opt=0):
     """
     Gale Shapley algorithm to resolve stable mariage problem
     :param female : a liste containning name of females
@@ -11,16 +12,16 @@ def Gale_Shapley(female,male,pref_f,pref_m,optimal=0):
     """
 
     # choose which side to optimize
-    if optimal==0:
+    if opt==0:
         side_opt=female.copy()
-        pref_opt=pref_f
+        pref_opt=deepcopy(pref_f)
         side_des=male.copy()
-        pref_des=pref_m
+        pref_des=deepcopy(pref_m)
     else:
         side_opt=male.copy()
-        pref_opt=pref_m
+        pref_opt=deepcopy(pref_m)
         side_des=female.copy()
-        pref_des=pref_f
+        pref_des=deepcopy(pref_f)
 
     # The algos continue while it exists single people on the optimal side
     while side_opt:

@@ -1,0 +1,14 @@
+\ Model mogplex_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Maximize
+ 
+Subject To
+ Contrainte0: x11 + x12 <= 1
+ Contrainte7: x11 + x21 + x31 + x41 + x51 + x61 + x71 <= 1
+ Contrainte38: x12 >= 1
+ Contrainte45: x11 + x51 >= 1
+ Contrainte47: x11 + x61 >= 1
+Bounds
+Binaries
+ x11 x12 x21 x31 x41 x51 x61 x71
+End
