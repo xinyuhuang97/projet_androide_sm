@@ -144,7 +144,7 @@ def prog_lineaire(list_instance):
         m.optimize()
         sys.stdout = save_stdout
         render=0
-        
+
         if render==1:
             status = m.status
             varInfo = [(v.varName, v.LB, v.UB) for v in m.getVars() ] # use list comprehension
