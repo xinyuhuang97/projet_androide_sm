@@ -180,18 +180,23 @@ def lire_entree(file):
     print("=================================")
     f = open(file, "r")
     nbmale=int((f.readline()).rstrip('\n'))
+    print(nbmale)
     nbfemale=int((f.readline()).rstrip('\n'))
+    male=[]
+    female=[]
     for i in range(nbmale):
         line=(f.readline()).rstrip('\n').split(",")
         s_m[line[0]]=["Single",[]]
+        male.append(line[0])
         for j in range(1,len(line)):
             s_m[line[0]][1].append(line[j])
     for i in range(nbfemale):
         line=(f.readline()).rstrip('\n').split(",")
         s_f[line[0]]=["Single",[]]
+        female.append(line[0])
         for j in range(1,len(line)):
             s_f[line[0]][1].append(line[j])
-    return s_m,s_f
+    return male,female,s_m,s_f
 
 
 def choix_algo(K,S, male, female, s_m, s_f):

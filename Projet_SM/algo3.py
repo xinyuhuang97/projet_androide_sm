@@ -99,7 +99,6 @@ def prog_lineaire(list_instance):
         for i in range(len(male_i)):
             for j in range(len(female_i)):
                 list_index=[(i,j)]
-                #check=[(i,j)]
                 homme=male_i[i]
                 femme=female_i[j]
                 v_pref_m_f=pm_i[homme][1].index(femme)
@@ -110,32 +109,13 @@ def prog_lineaire(list_instance):
                     #print("indice",pf_i[femme][1].index(new_homme),v_pref_f_m, new_homme, homme,k,i)
                     if pf_i[femme][1].index(new_homme)<v_pref_f_m:
                         list_index.append( (k, j) )
-                    """
-                    if pf_i[femme][1].index(new_homme)<=v_pref_f_m:
-                        print(pf_i[femme][1])
-                        print("indice",pf_i[femme][1].index(new_homme),v_pref_f_m, new_homme, homme, k, j, i, j)
-                        check.append( (k, j) )
-                    print("=======male======")
-                    print(list(set(list_index)))
-                    print(list(set(check)))"""
                 for l in range(len(female_i)):
                     new_femme=female_i[l]
                     #print("indice",pm_i[homme][1].index(new_femme),v_pref_m_f, new_femme, femme)
                     if pm_i[homme][1].index(new_femme)<v_pref_m_f:
                         list_index.append( (i, l) )
-                    """
-                    if pm_i[homme][1].index(new_femme)<=v_pref_m_f:
-                        print(pm_i[homme][1])
-                        print("indice",pm_i[homme][1].index(new_femme),v_pref_m_f, new_femme, femme, i, l, i, j)
-                        check.append( (i, l) )
-                    print("=======female======")
-                    print(list(set(list_index)))
-                    print(list(set(check)))"""
 
                 list_index=list(set(list_index))
-                #check=list(set(check))
-                #print("list_index",list_index)
-                #print("check", check)
                 m.addConstr(quicksum(x[m][n] for m,n in list_index) >= 1, "Contrainte%d" % counter)
                 counter+=1
         import sys

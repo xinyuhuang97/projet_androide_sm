@@ -1,0 +1,16 @@
+7
+7
+Josh,Laurel,Charolette,Georgetta,Brielle,Estrella,Albertha,Fred
+Jamel,Albertha,Fred,Laurel,Charolette,Georgetta,Brielle,Estrella
+Reinaldo,Charolette,Georgetta,Albertha,Fred,Laurel,Brielle,Estrella
+Monte,Laurel,Albertha,Georgetta,Fred,Brielle,Estrella,Charolette
+Jarrad,Charolette,Laurel,Georgetta,Fred,Estrella,Albertha,Brielle
+Beatrice,Georgetta,Laurel,Estrella,Brielle,Charolette,Albertha,Fred
+Lou,Charolette,Fred,Brielle,Estrella,Laurel,Albertha,Georgetta
+Laurel,Josh,Jamel,Reinaldo,Monte,Jarrad,Beatrice,Lou
+Charolette,Reinaldo,Monte,Jarrad,Beatrice,Lou,Josh,Jamel
+Georgetta,Beatrice,Reinaldo,Lou,Josh,Monte,Jarrad,Jamel
+Brielle,Beatrice,Reinaldo,Jarrad,Monte,Josh,Jamel,Lou
+Estrella,Beatrice,Lou,Reinaldo,Jamel,Jarrad,Monte,Josh
+Albertha,Monte,Lou,Reinaldo,Jamel,Jarrad,Josh,Beatrice
+Fred,Reinaldo,Lou,Jarrad,Josh,Beatrice,Monte,Jamel
