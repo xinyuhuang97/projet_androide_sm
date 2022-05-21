@@ -14,7 +14,7 @@ def gennere_set_f_m(dim1,dim2=0):
     """
     Function to generate the data struture of the problem studied
     int*(int)->list(str)*list(str)*dict*dict
-    :param dim1: number of males for our study
+    :param dim1: number of females for our study
     :param dim2(optional): number of males for our study
 
     :return female: list of name of males
@@ -226,7 +226,7 @@ def choix_algo(K,S, male, female, s_m, s_f):
     val2=calcul_difference_entre_gen(res2)
     sys.stdout = save_stdout
     val3=calcul_difference_entre_gen(algo_3(deepcopy(ins)))
-    val4=prog_lineaire_advance(deepcopy(ins))
+    val4,c4=prog_lineaire_advance(deepcopy(ins))
 
     #choose of best algorithm
     best_algo=np.argmin([val1,val2,val3,val4])+1

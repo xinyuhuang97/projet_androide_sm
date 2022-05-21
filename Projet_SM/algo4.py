@@ -204,4 +204,4 @@ def prog_lineaire_advance(list_instance):
                     couple_k.append((list_m[i],list_f[j]))
         couple.append(couple_k)
 
-    return int(m.objVal)
+    return int(m.objVal),couple
