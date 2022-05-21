@@ -94,8 +94,8 @@ import matplotlib.pyplot as plt
 ```python
 
 
-size_K=20
-size_S=20
+size_K=30
+size_S=30
 
 
 
@@ -135,6 +135,8 @@ for i in range(5,(size_S+1)):
         sl2.append(res2)
         sl3.append(res3)
         sl4.append(res4)
+        if res4>res3:
+            print("!!!!!!!!!!!!!!!!!Erreur!!!!!!!!!!!!!!!!!")
     sys.stdout = save_stdout
     print("i==",i)
     lv1.append(sl1)
@@ -177,6 +179,16 @@ for i in range(5,(size_S+1)):
     i== 18
     i== 19
     i== 20
+    i== 21
+    i== 22
+    i== 23
+    i== 24
+    i== 25
+    i== 26
+    i== 27
+    i== 28
+    i== 29
+    i== 30
 
 
 
@@ -221,6 +233,18 @@ plt.show()
 
 
 ```python
+print(lv3)
+print(lv2)
+print(lv4)
+```
+
+    [[6, 5, 6, 6, 7], [6, 6, 8, 10, 7], [11, 8, 13, 7, 10], [13, 15, 10, 11, 8], [14, 11, 11, 15, 10], [10, 17, 12, 13, 17], [18, 17, 18, 15, 20], [19, 20, 18, 19, 18], [18, 20, 22, 17, 21], [23, 29, 26, 25, 23], [26, 21, 19, 28, 24], [23, 33, 23, 21, 22], [27, 25, 25, 43, 19], [26, 35, 35, 27, 33], [21, 34, 28, 23, 31], [29, 34, 33, 31, 25], [34, 30, 40, 27, 31], [45, 39, 41, 36, 45], [41, 41, 38, 42, 26], [38, 48, 47, 46, 37], [44, 41, 38, 31, 47], [43, 48, 38, 46, 47], [47, 39, 52, 52, 55], [48, 45, 46, 49, 56], [54, 48, 49, 61, 38], [70, 48, 62, 61, 60]]
+    [[6, 5, 6, 6, 7], [6, 6, 8, 10, 7], [11, 8, 13, 7, 10], [13, 15, 10, 11, 8], [14, 11, 11, 15, 10], [10, 17, 12, 13, 17], [18, 17, 18, 15, 20], [19, 20, 18, 19, 18], [18, 20, 22, 17, 21], [23, 29, 26, 25, 23], [26, 21, 19, 28, 24], [23, 33, 23, 21, 22], [27, 25, 25, 43, 19], [26, 35, 35, 27, 33], [21, 34, 28, 23, 31], [29, 34, 33, 31, 25], [34, 30, 40, 27, 31], [45, 39, 41, 36, 45], [41, 41, 38, 42, 26], [38, 48, 47, 46, 37], [44, 41, 38, 31, 47], [43, 48, 38, 46, 47], [47, 39, 52, 52, 55], [48, 45, 46, 49, 56], [54, 48, 49, 61, 38], [70, 48, 62, 61, 60]]
+    [[6, 5, 6, 6, 7], [6, 6, 8, 10, 7], [11, 8, 13, 7, 10], [13, 14, 10, 11, 8], [14, 11, 10, 15, 10], [10, 16, 12, 13, 17], [18, 17, 18, 15, 20], [19, 20, 18, 18, 17], [18, 20, 21, 17, 21], [23, 28, 26, 25, 23], [26, 21, 19, 28, 24], [23, 31, 23, 21, 22], [27, 25, 25, 40, 19], [25, 35, 34, 27, 33], [21, 34, 28, 23, 31], [29, 34, 33, 31, 25], [34, 29, 38, 27, 31], [45, 38, 40, 36, 45], [41, 41, 38, 42, 26], [38, 48, 46, 45, 37], [44, 41, 38, 31, 46], [42, 48, 38, 45, 47], [47, 39, 52, 51, 55], [47, 45, 46, 49, 54], [54, 48, 49, 59, 38], [70, 48, 60, 61, 58]]
+
+
+
+```python
 nb_algo=1
 for l in [lv1, lv2, lv3, lv4]:
     max_v=np.max(l,axis=1)
@@ -237,25 +261,25 @@ for l in [lv1, lv2, lv3, lv4]:
 
 
     
-![png](output_10_0.png)
+![png](output_11_0.png)
     
 
 
 
     
-![png](output_10_1.png)
+![png](output_11_1.png)
     
 
 
 
     
-![png](output_10_2.png)
+![png](output_11_2.png)
     
 
 
 
     
-![png](output_10_3.png)
+![png](output_11_3.png)
     
 
 
@@ -332,7 +356,7 @@ plt.show()
 
 
     
-![png](output_13_0.png)
+![png](output_14_0.png)
     
 
 
@@ -411,7 +435,7 @@ plt.show()
 
 
     
-![png](output_15_0.png)
+![png](output_16_0.png)
     
 
 
@@ -742,10 +766,7 @@ min_v2=np.min(new_lv2,axis=1)
 
 #plt.fill_between(Lg, max_v1,min_v1, alpha=0.25, linewidth=0,)
 plt.plot(Lg,np.mean(new_lv1,axis=1),label="algo4")
-plt.xlabel("size")
-plt.ylabel("value")
-plt.legend()
-plt.show()
+
 
 
 #plt.fill_between(Lg, max_v2,min_v2, alpha=0.25, linewidth=0,)
@@ -760,29 +781,157 @@ plt.show()
 
 
     
-![png](output_19_0.png)
+![png](output_20_0.png)
+    
+
+
+# Interpolation
+
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+x_data = Lg
+
+for i in range(1,5):
+    y_data = lt3
+    x =  np.array(x_data)
+    y = np.array(y_data)/x**i
+
+    plt.plot(x, y, '-')
+    plt.ylabel( "y/x^"+str(i))
+    plt.title("algo3 y/x^"+str(i))
+    plt.show()
+```
+
+
+    
+![png](output_22_0.png)
     
 
 
 
     
-![png](output_19_1.png)
+![png](output_22_1.png)
     
 
 
-# Conclusion
 
-For the test in the situation : number male->max, number female from 1 to max, we can notice some property:
+    
+![png](output_22_2.png)
+    
 
-**1.** It exites a difference between algo1 and algo2:
-- we can find out that the time and value for algo2 is always better than algo1 which alppy the same algorithm(Gale-shapley)
 
-**Explanation** It's due to the algo2 is female optimal thatoptimizing female side that once females find there couples, algos stop, with |female|<=|male. And also, the vallue for algo2 is better that algo 1 because every time when female choose, she has the entire list of preference (40) meanwhile the preference list for male is incomplete so that males are more likey to change couples.
 
-**2.** Algo3 and algo4 return the same value for difference between generations
+    
+![png](output_22_3.png)
+    
 
-**Explanation** This is due to th concept of algorithm 3, we want to avoid divorcement so each time when we add a female, we fix a couple between she and another male, grace to the proprety of S, the number of females is crossant so we don't need to make divorcement, so the value is minimum as  algo4. However, algo4 is more complicated than algo3 in terms of complexity so we need to use algo3 instead of algo4.
 
-**3.** The number of size should be less than 25/30
 
-**Explanation** From two figures of time-cost evolution, we can find out that time-cost increase exponentially from 25/30 which may cost a lot of time and computation with bad efficency.
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+x_data = Lg
+
+for i in range(1,5):
+    y_data = lt4
+    x =  np.array(x_data)
+    y = np.array(y_data)/x**i
+
+    plt.plot(x, y, '-')
+    plt.ylabel( "y/x^"+str(i))
+    plt.title("algo4 y/x^"+str(i))
+    plt.show()
+```
+
+
+    
+![png](output_23_0.png)
+    
+
+
+
+    
+![png](output_23_1.png)
+    
+
+
+
+    
+![png](output_23_2.png)
+    
+
+
+
+    
+![png](output_23_3.png)
+    
+
+
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+x_data = Lg
+
+y_data = lt3
+x =  np.log(x_data)
+y = np.log(y_data)
+
+plt.plot(x, y, '-')
+plt.ylabel( "log y")
+plt.xlabel( "log x")
+plt.title("algo3 log")
+plt.show()#(3,0) (2.25,-2)
+```
+
+
+    
+![png](output_24_0.png)
+    
+
+
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+x_data = Lg
+
+y_data = lt4
+x =  np.log(x_data)
+y = np.log(y_data)
+
+plt.plot(x, y, '-')
+plt.ylabel( "log y")
+plt.xlabel( "log x")
+plt.title("algo4 log")
+plt.show()#(3,1) (1.75,-3)
+```
+
+
+    
+![png](output_25_0.png)
+    
+
+
+## Conclusion
+### Remarque 1
+On peut bien remarquer que le temps de calcul de algo1 et algo 2 sont quasiment identiques, cela vient du fait que ces deux algos utilisent tous les deux la méthode Gale-shapley(femme optimal/homme optimal). Algo3 prend beaucoup plus de temps que algo1/2, et algo4 coûte plus de temps, qui est à peu près deux fois de plus que celle de l'algo3. 
+### Remarque 2
+À partir de la figure de value, on peut remarquer que l'algo 1 qui est le pire algo. Cela vient du fait que l'algo 1 n'a pas du tout pris en compte les changement de couples entre deux t différents.
+### Remarque 3
+On peut aussi remarquer que la courbe de algo3 est très proche de cela de algo4, qui est logique car les deux algos prennent en compte à minimiser la différence entre t consécutive. Et algo4 est une borne inférieure de algo3 car il minimise les changements globals et algo3 seulement considère à minimiser les changements entre les couples de temps consécutive.
+### Remarque 4
+
+On ne peut pas trouver la courbe à partir de la courbe de gauche. En faisant la commande ''prin'', j'ai remarqué que la valeur de algo2 est très proche de la valeur de algo3(une seule différence dans notre cas est quand n=25, algo2 est pire que algo3. C'est une remarque un peu magique mais compréhensible: dans notre algo3, on utilise une contrainte stabilité, qui est en fait une contrainte qui limite les deux côté(homme et femme), qui est plus vaste que celle de algo3(qui limité seulement le côté femme), c'est pourquoi ils sont proches
+
+### Remarque 5
+
+ Algo3 $\theta(x^{2.67})$
+ Algo4 $\theta(x^{3.2})$
+
+
+```python
+
+```
