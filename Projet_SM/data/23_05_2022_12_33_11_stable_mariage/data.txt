@@ -1,0 +1,341 @@
+Value: 2 Iteration:0
+name1
+	['Laurel', 'Charolette']
+name2
+	['Josh', 'Jamel']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel']], 'Charolette': ['Single', ['Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette']], 'Jamel': ['Single', ['Laurel', 'Charolette']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Jamel', 'Charolette')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Jamel', 'Charolette')]]
+algo4
+	[[('Josh', 'Laurel'), ('Jamel', 'Charolette')]]Value: 2 Iteration:1
+name1
+	['Laurel', 'Charolette']
+name2
+	['Josh', 'Jamel']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel']], 'Charolette': ['Single', ['Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette']], 'Jamel': ['Single', ['Laurel', 'Charolette']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Jamel', 'Charolette')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Jamel', 'Charolette')]]
+algo4
+	[[('Josh', 'Laurel'), ('Jamel', 'Charolette')]]Value: 2 Iteration:2
+name1
+	['Laurel', 'Charolette']
+name2
+	['Josh', 'Jamel']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel']], 'Charolette': ['Single', ['Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette']], 'Jamel': ['Single', ['Laurel', 'Charolette']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Jamel', 'Charolette')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Jamel', 'Charolette')]]
+algo4
+	[[('Josh', 'Laurel'), ('Jamel', 'Charolette')]]Value: 2 Iteration:3
+name1
+	['Laurel', 'Charolette']
+name2
+	['Josh', 'Jamel']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel']], 'Charolette': ['Single', ['Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette']], 'Jamel': ['Single', ['Laurel', 'Charolette']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Jamel', 'Charolette')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Jamel', 'Charolette')]]
+algo4
+	[[('Josh', 'Laurel'), ('Jamel', 'Charolette')]]Value: 2 Iteration:4
+name1
+	['Laurel', 'Charolette']
+name2
+	['Josh', 'Jamel']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel']], 'Charolette': ['Single', ['Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette']], 'Jamel': ['Single', ['Laurel', 'Charolette']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Jamel', 'Charolette')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Jamel', 'Charolette')]]
+algo4
+	[[('Josh', 'Laurel'), ('Jamel', 'Charolette')]]Value: 3 Iteration:0
+name1
+	['Laurel', 'Charolette', 'Georgetta']
+name2
+	['Josh', 'Jamel', 'Reinaldo']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo']], 'Charolette': ['Single', ['Reinaldo', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]Value: 3 Iteration:1
+name1
+	['Laurel', 'Charolette', 'Georgetta']
+name2
+	['Josh', 'Jamel', 'Reinaldo']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo']], 'Charolette': ['Single', ['Reinaldo', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]Value: 3 Iteration:2
+name1
+	['Laurel', 'Charolette', 'Georgetta']
+name2
+	['Josh', 'Jamel', 'Reinaldo']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo']], 'Charolette': ['Single', ['Reinaldo', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]Value: 3 Iteration:3
+name1
+	['Laurel', 'Charolette', 'Georgetta']
+name2
+	['Josh', 'Jamel', 'Reinaldo']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo']], 'Charolette': ['Single', ['Reinaldo', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]Value: 3 Iteration:4
+name1
+	['Laurel', 'Charolette', 'Georgetta']
+name2
+	['Josh', 'Jamel', 'Reinaldo']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo']], 'Charolette': ['Single', ['Reinaldo', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Georgetta'), ('Reinaldo', 'Charolette')]]Value: 4 Iteration:0
+name1
+	['Laurel', 'Charolette', 'Georgetta', 'Brielle']
+name2
+	['Josh', 'Jamel', 'Reinaldo', 'Monte']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo', 'Monte']], 'Charolette': ['Single', ['Reinaldo', 'Monte', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Monte', 'Jamel']], 'Brielle': ['Single', ['Reinaldo', 'Monte', 'Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel', 'Brielle']], 'Monte': ['Single', ['Laurel', 'Georgetta', 'Brielle', 'Charolette']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]Value: 4 Iteration:1
+name1
+	['Laurel', 'Charolette', 'Georgetta', 'Brielle']
+name2
+	['Josh', 'Jamel', 'Reinaldo', 'Monte']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo', 'Monte']], 'Charolette': ['Single', ['Reinaldo', 'Monte', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Monte', 'Jamel']], 'Brielle': ['Single', ['Reinaldo', 'Monte', 'Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel', 'Brielle']], 'Monte': ['Single', ['Laurel', 'Georgetta', 'Brielle', 'Charolette']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]Value: 4 Iteration:2
+name1
+	['Laurel', 'Charolette', 'Georgetta', 'Brielle']
+name2
+	['Josh', 'Jamel', 'Reinaldo', 'Monte']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo', 'Monte']], 'Charolette': ['Single', ['Reinaldo', 'Monte', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Monte', 'Jamel']], 'Brielle': ['Single', ['Reinaldo', 'Monte', 'Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel', 'Brielle']], 'Monte': ['Single', ['Laurel', 'Georgetta', 'Brielle', 'Charolette']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]Value: 4 Iteration:3
+name1
+	['Laurel', 'Charolette', 'Georgetta', 'Brielle']
+name2
+	['Josh', 'Jamel', 'Reinaldo', 'Monte']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo', 'Monte']], 'Charolette': ['Single', ['Reinaldo', 'Monte', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Monte', 'Jamel']], 'Brielle': ['Single', ['Reinaldo', 'Monte', 'Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel', 'Brielle']], 'Monte': ['Single', ['Laurel', 'Georgetta', 'Brielle', 'Charolette']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]Value: 4 Iteration:4
+name1
+	['Laurel', 'Charolette', 'Georgetta', 'Brielle']
+name2
+	['Josh', 'Jamel', 'Reinaldo', 'Monte']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo', 'Monte']], 'Charolette': ['Single', ['Reinaldo', 'Monte', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Monte', 'Jamel']], 'Brielle': ['Single', ['Reinaldo', 'Monte', 'Josh', 'Jamel']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel', 'Brielle']], 'Monte': ['Single', ['Laurel', 'Georgetta', 'Brielle', 'Charolette']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')]]Value: 5 Iteration:0
+name1
+	['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']
+name2
+	['Josh', 'Jamel', 'Reinaldo', 'Monte', 'Jarrad']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo', 'Monte', 'Jarrad']], 'Charolette': ['Single', ['Reinaldo', 'Monte', 'Jarrad', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Monte', 'Jarrad', 'Jamel']], 'Brielle': ['Single', ['Reinaldo', 'Jarrad', 'Monte', 'Josh', 'Jamel']], 'Estrella': ['Single', ['Reinaldo', 'Jamel', 'Jarrad', 'Monte', 'Josh']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel', 'Brielle', 'Estrella']], 'Monte': ['Single', ['Laurel', 'Georgetta', 'Brielle', 'Estrella', 'Charolette']], 'Jarrad': ['Single', ['Charolette', 'Laurel', 'Georgetta', 'Estrella', 'Brielle']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Estrella')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jarrad')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jarrad'), ('Estrella', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')]]Value: 5 Iteration:1
+name1
+	['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']
+name2
+	['Josh', 'Jamel', 'Reinaldo', 'Monte', 'Jarrad']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo', 'Monte', 'Jarrad']], 'Charolette': ['Single', ['Reinaldo', 'Monte', 'Jarrad', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Monte', 'Jarrad', 'Jamel']], 'Brielle': ['Single', ['Reinaldo', 'Jarrad', 'Monte', 'Josh', 'Jamel']], 'Estrella': ['Single', ['Reinaldo', 'Jamel', 'Jarrad', 'Monte', 'Josh']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel', 'Brielle', 'Estrella']], 'Monte': ['Single', ['Laurel', 'Georgetta', 'Brielle', 'Estrella', 'Charolette']], 'Jarrad': ['Single', ['Charolette', 'Laurel', 'Georgetta', 'Estrella', 'Brielle']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Estrella')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jarrad')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jarrad'), ('Estrella', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')]]Value: 5 Iteration:2
+name1
+	['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']
+name2
+	['Josh', 'Jamel', 'Reinaldo', 'Monte', 'Jarrad']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo', 'Monte', 'Jarrad']], 'Charolette': ['Single', ['Reinaldo', 'Monte', 'Jarrad', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Monte', 'Jarrad', 'Jamel']], 'Brielle': ['Single', ['Reinaldo', 'Jarrad', 'Monte', 'Josh', 'Jamel']], 'Estrella': ['Single', ['Reinaldo', 'Jamel', 'Jarrad', 'Monte', 'Josh']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel', 'Brielle', 'Estrella']], 'Monte': ['Single', ['Laurel', 'Georgetta', 'Brielle', 'Estrella', 'Charolette']], 'Jarrad': ['Single', ['Charolette', 'Laurel', 'Georgetta', 'Estrella', 'Brielle']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Estrella')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jarrad')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jarrad'), ('Estrella', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')]]Value: 5 Iteration:3
+name1
+	['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']
+name2
+	['Josh', 'Jamel', 'Reinaldo', 'Monte', 'Jarrad']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo', 'Monte', 'Jarrad']], 'Charolette': ['Single', ['Reinaldo', 'Monte', 'Jarrad', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Monte', 'Jarrad', 'Jamel']], 'Brielle': ['Single', ['Reinaldo', 'Jarrad', 'Monte', 'Josh', 'Jamel']], 'Estrella': ['Single', ['Reinaldo', 'Jamel', 'Jarrad', 'Monte', 'Josh']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel', 'Brielle', 'Estrella']], 'Monte': ['Single', ['Laurel', 'Georgetta', 'Brielle', 'Estrella', 'Charolette']], 'Jarrad': ['Single', ['Charolette', 'Laurel', 'Georgetta', 'Estrella', 'Brielle']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Estrella')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jarrad')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jarrad'), ('Estrella', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')]]Value: 5 Iteration:4
+name1
+	['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']
+name2
+	['Josh', 'Jamel', 'Reinaldo', 'Monte', 'Jarrad']
+pref1
+	{'Laurel': ['Single', ['Josh', 'Jamel', 'Reinaldo', 'Monte', 'Jarrad']], 'Charolette': ['Single', ['Reinaldo', 'Monte', 'Jarrad', 'Josh', 'Jamel']], 'Georgetta': ['Single', ['Reinaldo', 'Josh', 'Monte', 'Jarrad', 'Jamel']], 'Brielle': ['Single', ['Reinaldo', 'Jarrad', 'Monte', 'Josh', 'Jamel']], 'Estrella': ['Single', ['Reinaldo', 'Jamel', 'Jarrad', 'Monte', 'Josh']]}
+pref2
+	{'Josh': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']], 'Jamel': ['Single', ['Laurel', 'Charolette', 'Georgetta', 'Brielle', 'Estrella']], 'Reinaldo': ['Single', ['Charolette', 'Georgetta', 'Laurel', 'Brielle', 'Estrella']], 'Monte': ['Single', ['Laurel', 'Georgetta', 'Brielle', 'Estrella', 'Charolette']], 'Jarrad': ['Single', ['Charolette', 'Laurel', 'Georgetta', 'Estrella', 'Brielle']]}
+
+algo1
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Brielle'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Estrella')]]
+algo2
+	[[('Laurel', 'Josh')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jarrad')], [('Laurel', 'Josh'), ('Charolette', 'Reinaldo'), ('Georgetta', 'Monte'), ('Brielle', 'Jarrad'), ('Estrella', 'Jamel')]]
+algo3
+	[[('Josh', 'Laurel')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')]]
+algo4
+	[[('Josh', 'Laurel'), ('Reinaldo', 'Charolette')], [('Josh', 'Laurel'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')], [('Josh', 'Laurel'), ('Jamel', 'Estrella'), ('Reinaldo', 'Charolette'), ('Monte', 'Georgetta'), ('Jarrad', 'Brielle')]]

@@ -93,7 +93,9 @@ def compare_algo(minv,maxv,step,var_check_save,filename,var_check_plot,filenamep
         top.title("File name erreur")
         tk.Label(top, text= "File already exists, please change the file name!", font=('Mistral 12 bold')).place(x=100,y=70)
         return 0
-    os.mkdir(dir)
+    if var_check_save==1:
+        os.mkdir(dir)
+    
     global IMPORT_DATA
     global DATA
     #global stop

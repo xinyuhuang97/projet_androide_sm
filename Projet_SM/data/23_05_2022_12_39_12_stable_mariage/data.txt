@@ -1,0 +1,341 @@
+Value: 2 Iteration:0
+name1
+	['Fleeta', 'Etha']
+name2
+	['Brandin', 'Codey']
+pref1
+	{'Fleeta': ['Single', ['Brandin', 'Codey']], 'Etha': ['Single', ['Brandin', 'Codey']]}
+pref2
+	{'Brandin': ['Single', ['Fleeta', 'Etha']], 'Codey': ['Single', ['Etha', 'Fleeta']]}
+
+algo1
+	[[('Brandin', 'Fleeta')], [('Brandin', 'Fleeta'), ('Codey', 'Etha')]]
+algo2
+	[[('Fleeta', 'Brandin')], [('Fleeta', 'Brandin'), ('Etha', 'Codey')]]
+algo3
+	[[('Brandin', 'Fleeta')], [('Brandin', 'Fleeta'), ('Codey', 'Etha')]]
+algo4
+	[[('Brandin', 'Fleeta'), ('Codey', 'Etha')]]Value: 2 Iteration:1
+name1
+	['Maribeth', 'Janis']
+name2
+	['Ellsworth', 'Tyrique']
+pref1
+	{'Maribeth': ['Single', ['Tyrique', 'Ellsworth']], 'Janis': ['Single', ['Ellsworth', 'Tyrique']]}
+pref2
+	{'Ellsworth': ['Single', ['Janis', 'Maribeth']], 'Tyrique': ['Single', ['Janis', 'Maribeth']]}
+
+algo1
+	[[('Tyrique', 'Maribeth')], [('Ellsworth', 'Janis'), ('Tyrique', 'Maribeth')]]
+algo2
+	[[('Maribeth', 'Tyrique')], [('Maribeth', 'Tyrique'), ('Janis', 'Ellsworth')]]
+algo3
+	[[('Tyrique', 'Maribeth')], [('Ellsworth', 'Janis'), ('Tyrique', 'Maribeth')]]
+algo4
+	[[('Ellsworth', 'Janis'), ('Tyrique', 'Maribeth')]]Value: 2 Iteration:2
+name1
+	['Keli', 'Sherrie']
+name2
+	['Ezequiel', 'Charls']
+pref1
+	{'Keli': ['Single', ['Charls', 'Ezequiel']], 'Sherrie': ['Single', ['Ezequiel', 'Charls']]}
+pref2
+	{'Ezequiel': ['Single', ['Sherrie', 'Keli']], 'Charls': ['Single', ['Sherrie', 'Keli']]}
+
+algo1
+	[[('Charls', 'Keli')], [('Ezequiel', 'Sherrie'), ('Charls', 'Keli')]]
+algo2
+	[[('Keli', 'Charls')], [('Keli', 'Charls'), ('Sherrie', 'Ezequiel')]]
+algo3
+	[[('Charls', 'Keli')], [('Ezequiel', 'Sherrie'), ('Charls', 'Keli')]]
+algo4
+	[[('Ezequiel', 'Sherrie'), ('Charls', 'Keli')]]Value: 2 Iteration:3
+name1
+	['Dori', 'Rachael']
+name2
+	['Stephanie', 'Dyllan']
+pref1
+	{'Dori': ['Single', ['Stephanie', 'Dyllan']], 'Rachael': ['Single', ['Dyllan', 'Stephanie']]}
+pref2
+	{'Stephanie': ['Single', ['Rachael', 'Dori']], 'Dyllan': ['Single', ['Dori', 'Rachael']]}
+
+algo1
+	[[('Stephanie', 'Dori')], [('Stephanie', 'Rachael'), ('Dyllan', 'Dori')]]
+algo2
+	[[('Dori', 'Stephanie')], [('Dori', 'Stephanie'), ('Rachael', 'Dyllan')]]
+algo3
+	[[('Stephanie', 'Dori')], [('Stephanie', 'Dori'), ('Dyllan', 'Rachael')]]
+algo4
+	[[('Stephanie', 'Dori'), ('Dyllan', 'Rachael')]]Value: 2 Iteration:4
+name1
+	['Elza', 'Avery']
+name2
+	['Edmon', 'Gerrit']
+pref1
+	{'Elza': ['Single', ['Edmon', 'Gerrit']], 'Avery': ['Single', ['Edmon', 'Gerrit']]}
+pref2
+	{'Edmon': ['Single', ['Elza', 'Avery']], 'Gerrit': ['Single', ['Avery', 'Elza']]}
+
+algo1
+	[[('Edmon', 'Elza')], [('Edmon', 'Elza'), ('Gerrit', 'Avery')]]
+algo2
+	[[('Elza', 'Edmon')], [('Elza', 'Edmon'), ('Avery', 'Gerrit')]]
+algo3
+	[[('Edmon', 'Elza')], [('Edmon', 'Elza'), ('Gerrit', 'Avery')]]
+algo4
+	[[('Edmon', 'Elza'), ('Gerrit', 'Avery')]]Value: 3 Iteration:0
+name1
+	['Cheyanne', 'Pat', 'Adrianna']
+name2
+	['Mustafa', 'Gilman', 'Storm']
+pref1
+	{'Cheyanne': ['Single', ['Storm', 'Gilman', 'Mustafa']], 'Pat': ['Single', ['Gilman', 'Storm', 'Mustafa']], 'Adrianna': ['Single', ['Storm', 'Mustafa', 'Gilman']]}
+pref2
+	{'Mustafa': ['Single', ['Pat', 'Adrianna', 'Cheyanne']], 'Gilman': ['Single', ['Adrianna', 'Cheyanne', 'Pat']], 'Storm': ['Single', ['Adrianna', 'Cheyanne', 'Pat']]}
+
+algo1
+	[[('Storm', 'Cheyanne')], [('Gilman', 'Pat'), ('Storm', 'Cheyanne')], [('Mustafa', 'Pat'), ('Gilman', 'Cheyanne'), ('Storm', 'Adrianna')]]
+algo2
+	[[('Cheyanne', 'Storm')], [('Cheyanne', 'Storm'), ('Pat', 'Gilman')], [('Cheyanne', 'Gilman'), ('Pat', 'Mustafa'), ('Adrianna', 'Storm')]]
+algo3
+	[[('Storm', 'Cheyanne')], [('Gilman', 'Pat'), ('Storm', 'Cheyanne')], [('Mustafa', 'Pat'), ('Gilman', 'Cheyanne'), ('Storm', 'Adrianna')]]
+algo4
+	[[('Gilman', 'Pat'), ('Storm', 'Cheyanne')], [('Mustafa', 'Pat'), ('Gilman', 'Cheyanne'), ('Storm', 'Adrianna')]]Value: 3 Iteration:1
+name1
+	['Alanna', 'Nautica', 'Tabatha']
+name2
+	['Brittany', 'Darrius', 'Brandan']
+pref1
+	{'Alanna': ['Single', ['Brandan', 'Darrius', 'Brittany']], 'Nautica': ['Single', ['Darrius', 'Brittany', 'Brandan']], 'Tabatha': ['Single', ['Brittany', 'Darrius', 'Brandan']]}
+pref2
+	{'Brittany': ['Single', ['Alanna', 'Nautica', 'Tabatha']], 'Darrius': ['Single', ['Nautica', 'Tabatha', 'Alanna']], 'Brandan': ['Single', ['Tabatha', 'Alanna', 'Nautica']]}
+
+algo1
+	[[('Brandan', 'Alanna')], [('Darrius', 'Nautica'), ('Brandan', 'Alanna')], [('Brittany', 'Alanna'), ('Darrius', 'Nautica'), ('Brandan', 'Tabatha')]]
+algo2
+	[[('Alanna', 'Brandan')], [('Alanna', 'Brandan'), ('Nautica', 'Darrius')], [('Alanna', 'Brandan'), ('Nautica', 'Darrius'), ('Tabatha', 'Brittany')]]
+algo3
+	[[('Brandan', 'Alanna')], [('Darrius', 'Nautica'), ('Brandan', 'Alanna')], [('Brittany', 'Tabatha'), ('Darrius', 'Nautica'), ('Brandan', 'Alanna')]]
+algo4
+	[[('Brittany', 'Tabatha'), ('Darrius', 'Nautica'), ('Brandan', 'Alanna')], [('Brittany', 'Tabatha'), ('Darrius', 'Nautica'), ('Brandan', 'Alanna')]]Value: 3 Iteration:2
+name1
+	['Jazmine', 'Marjorie', 'Lana']
+name2
+	['Crystal', 'Pat', 'Ira']
+pref1
+	{'Jazmine': ['Single', ['Ira', 'Pat', 'Crystal']], 'Marjorie': ['Single', ['Ira', 'Crystal', 'Pat']], 'Lana': ['Single', ['Crystal', 'Ira', 'Pat']]}
+pref2
+	{'Crystal': ['Single', ['Lana', 'Marjorie', 'Jazmine']], 'Pat': ['Single', ['Jazmine', 'Lana', 'Marjorie']], 'Ira': ['Single', ['Jazmine', 'Marjorie', 'Lana']]}
+
+algo1
+	[[('Ira', 'Jazmine')], [('Crystal', 'Marjorie'), ('Ira', 'Jazmine')], [('Crystal', 'Lana'), ('Pat', 'Marjorie'), ('Ira', 'Jazmine')]]
+algo2
+	[[('Jazmine', 'Ira')], [('Jazmine', 'Ira'), ('Marjorie', 'Crystal')], [('Jazmine', 'Ira'), ('Marjorie', 'Pat'), ('Lana', 'Crystal')]]
+algo3
+	[[('Ira', 'Jazmine')], [('Crystal', 'Marjorie'), ('Ira', 'Jazmine')], [('Crystal', 'Lana'), ('Pat', 'Marjorie'), ('Ira', 'Jazmine')]]
+algo4
+	[[('Crystal', 'Marjorie'), ('Ira', 'Jazmine')], [('Crystal', 'Lana'), ('Pat', 'Marjorie'), ('Ira', 'Jazmine')]]Value: 3 Iteration:3
+name1
+	['Magdalena', 'Jordin', 'Lisette']
+name2
+	['Adelard', 'Norbert', 'Cassius']
+pref1
+	{'Magdalena': ['Single', ['Cassius', 'Adelard', 'Norbert']], 'Jordin': ['Single', ['Norbert', 'Adelard', 'Cassius']], 'Lisette': ['Single', ['Adelard', 'Cassius', 'Norbert']]}
+pref2
+	{'Adelard': ['Single', ['Jordin', 'Lisette', 'Magdalena']], 'Norbert': ['Single', ['Lisette', 'Magdalena', 'Jordin']], 'Cassius': ['Single', ['Lisette', 'Jordin', 'Magdalena']]}
+
+algo1
+	[[('Cassius', 'Magdalena')], [('Norbert', 'Jordin'), ('Cassius', 'Magdalena')], [('Adelard', 'Jordin'), ('Norbert', 'Magdalena'), ('Cassius', 'Lisette')]]
+algo2
+	[[('Magdalena', 'Cassius')], [('Magdalena', 'Cassius'), ('Jordin', 'Norbert')], [('Magdalena', 'Cassius'), ('Jordin', 'Norbert'), ('Lisette', 'Adelard')]]
+algo3
+	[[('Cassius', 'Magdalena')], [('Norbert', 'Jordin'), ('Cassius', 'Magdalena')], [('Adelard', 'Lisette'), ('Norbert', 'Jordin'), ('Cassius', 'Magdalena')]]
+algo4
+	[[('Norbert', 'Jordin'), ('Cassius', 'Magdalena')], [('Adelard', 'Lisette'), ('Norbert', 'Jordin'), ('Cassius', 'Magdalena')]]Value: 3 Iteration:4
+name1
+	['Andra', 'Jaquelin', 'Sable']
+name2
+	['Colonel', 'Ferrell', 'Jagger']
+pref1
+	{'Andra': ['Single', ['Jagger', 'Ferrell', 'Colonel']], 'Jaquelin': ['Single', ['Colonel', 'Jagger', 'Ferrell']], 'Sable': ['Single', ['Jagger', 'Colonel', 'Ferrell']]}
+pref2
+	{'Colonel': ['Single', ['Sable', 'Jaquelin', 'Andra']], 'Ferrell': ['Single', ['Sable', 'Jaquelin', 'Andra']], 'Jagger': ['Single', ['Andra', 'Jaquelin', 'Sable']]}
+
+algo1
+	[[('Jagger', 'Andra')], [('Colonel', 'Jaquelin'), ('Jagger', 'Andra')], [('Colonel', 'Sable'), ('Ferrell', 'Jaquelin'), ('Jagger', 'Andra')]]
+algo2
+	[[('Andra', 'Jagger')], [('Andra', 'Jagger'), ('Jaquelin', 'Colonel')], [('Andra', 'Jagger'), ('Jaquelin', 'Ferrell'), ('Sable', 'Colonel')]]
+algo3
+	[[('Jagger', 'Andra')], [('Colonel', 'Jaquelin'), ('Jagger', 'Andra')], [('Colonel', 'Sable'), ('Ferrell', 'Jaquelin'), ('Jagger', 'Andra')]]
+algo4
+	[[('Colonel', 'Jaquelin'), ('Jagger', 'Andra')], [('Colonel', 'Sable'), ('Ferrell', 'Jaquelin'), ('Jagger', 'Andra')]]Value: 4 Iteration:0
+name1
+	['Elba', 'Hedwig', 'Danita', 'Shea']
+name2
+	['Gloria', 'Jaheem', 'Dillard', 'Keanu']
+pref1
+	{'Elba': ['Single', ['Gloria', 'Keanu', 'Jaheem', 'Dillard']], 'Hedwig': ['Single', ['Dillard', 'Gloria', 'Jaheem', 'Keanu']], 'Danita': ['Single', ['Dillard', 'Gloria', 'Keanu', 'Jaheem']], 'Shea': ['Single', ['Keanu', 'Gloria', 'Jaheem', 'Dillard']]}
+pref2
+	{'Gloria': ['Single', ['Elba', 'Hedwig', 'Shea', 'Danita']], 'Jaheem': ['Single', ['Danita', 'Elba', 'Shea', 'Hedwig']], 'Dillard': ['Single', ['Danita', 'Shea', 'Elba', 'Hedwig']], 'Keanu': ['Single', ['Danita', 'Shea', 'Elba', 'Hedwig']]}
+
+algo1
+	[[('Gloria', 'Elba')], [('Gloria', 'Elba'), ('Dillard', 'Hedwig')], [('Gloria', 'Elba'), ('Jaheem', 'Hedwig'), ('Dillard', 'Danita')], [('Gloria', 'Elba'), ('Jaheem', 'Hedwig'), ('Dillard', 'Danita'), ('Keanu', 'Shea')]]
+algo2
+	[[('Elba', 'Gloria')], [('Elba', 'Gloria'), ('Hedwig', 'Dillard')], [('Elba', 'Gloria'), ('Hedwig', 'Jaheem'), ('Danita', 'Dillard')], [('Elba', 'Gloria'), ('Hedwig', 'Jaheem'), ('Danita', 'Dillard'), ('Shea', 'Keanu')]]
+algo3
+	[[('Gloria', 'Elba')], [('Gloria', 'Elba'), ('Dillard', 'Hedwig')], [('Gloria', 'Elba'), ('Jaheem', 'Hedwig'), ('Dillard', 'Danita')], [('Gloria', 'Elba'), ('Jaheem', 'Hedwig'), ('Dillard', 'Danita'), ('Keanu', 'Shea')]]
+algo4
+	[[('Gloria', 'Elba'), ('Dillard', 'Hedwig')], [('Gloria', 'Elba'), ('Jaheem', 'Hedwig'), ('Dillard', 'Danita'), ('Keanu', 'Shea')], [('Gloria', 'Elba'), ('Jaheem', 'Hedwig'), ('Dillard', 'Danita'), ('Keanu', 'Shea')]]Value: 4 Iteration:1
+name1
+	['Lexus', 'Hadassah', 'Amaya', 'Destany']
+name2
+	['Randall', 'Delma', 'Trae', 'Khalid']
+pref1
+	{'Lexus': ['Single', ['Delma', 'Khalid', 'Randall', 'Trae']], 'Hadassah': ['Single', ['Trae', 'Khalid', 'Delma', 'Randall']], 'Amaya': ['Single', ['Randall', 'Khalid', 'Trae', 'Delma']], 'Destany': ['Single', ['Khalid', 'Randall', 'Delma', 'Trae']]}
+pref2
+	{'Randall': ['Single', ['Amaya', 'Lexus', 'Hadassah', 'Destany']], 'Delma': ['Single', ['Destany', 'Lexus', 'Hadassah', 'Amaya']], 'Trae': ['Single', ['Lexus', 'Destany', 'Amaya', 'Hadassah']], 'Khalid': ['Single', ['Amaya', 'Lexus', 'Destany', 'Hadassah']]}
+
+algo1
+	[[('Delma', 'Lexus')], [('Delma', 'Lexus'), ('Trae', 'Hadassah')], [('Randall', 'Amaya'), ('Delma', 'Lexus'), ('Trae', 'Hadassah')], [('Randall', 'Amaya'), ('Delma', 'Destany'), ('Trae', 'Hadassah'), ('Khalid', 'Lexus')]]
+algo2
+	[[('Lexus', 'Delma')], [('Lexus', 'Delma'), ('Hadassah', 'Trae')], [('Lexus', 'Delma'), ('Hadassah', 'Trae'), ('Amaya', 'Randall')], [('Lexus', 'Delma'), ('Hadassah', 'Trae'), ('Amaya', 'Randall'), ('Destany', 'Khalid')]]
+algo3
+	[[('Delma', 'Lexus')], [('Delma', 'Lexus'), ('Trae', 'Hadassah')], [('Randall', 'Amaya'), ('Delma', 'Lexus'), ('Trae', 'Hadassah')], [('Randall', 'Amaya'), ('Delma', 'Lexus'), ('Trae', 'Hadassah'), ('Khalid', 'Destany')]]
+algo4
+	[[('Delma', 'Lexus'), ('Trae', 'Hadassah'), ('Khalid', 'Destany')], [('Randall', 'Amaya'), ('Delma', 'Lexus'), ('Trae', 'Hadassah'), ('Khalid', 'Destany')], [('Randall', 'Amaya'), ('Delma', 'Lexus'), ('Trae', 'Hadassah'), ('Khalid', 'Destany')]]Value: 4 Iteration:2
+name1
+	['Brook', 'Dwan', 'Bena', 'Kaela']
+name2
+	['Davante', 'Elza', 'Ovila', 'Spencer']
+pref1
+	{'Brook': ['Single', ['Elza', 'Ovila', 'Spencer', 'Davante']], 'Dwan': ['Single', ['Spencer', 'Davante', 'Ovila', 'Elza']], 'Bena': ['Single', ['Davante', 'Spencer', 'Ovila', 'Elza']], 'Kaela': ['Single', ['Davante', 'Elza', 'Spencer', 'Ovila']]}
+pref2
+	{'Davante': ['Single', ['Bena', 'Brook', 'Kaela', 'Dwan']], 'Elza': ['Single', ['Dwan', 'Bena', 'Kaela', 'Brook']], 'Ovila': ['Single', ['Bena', 'Dwan', 'Brook', 'Kaela']], 'Spencer': ['Single', ['Dwan', 'Bena', 'Kaela', 'Brook']]}
+
+algo1
+	[[('Elza', 'Brook')], [('Elza', 'Brook'), ('Spencer', 'Dwan')], [('Davante', 'Bena'), ('Elza', 'Brook'), ('Spencer', 'Dwan')], [('Davante', 'Bena'), ('Elza', 'Kaela'), ('Ovila', 'Brook'), ('Spencer', 'Dwan')]]
+algo2
+	[[('Brook', 'Elza')], [('Brook', 'Elza'), ('Dwan', 'Spencer')], [('Brook', 'Elza'), ('Dwan', 'Spencer'), ('Bena', 'Davante')], [('Brook', 'Ovila'), ('Dwan', 'Spencer'), ('Bena', 'Davante'), ('Kaela', 'Elza')]]
+algo3
+	[[('Elza', 'Brook')], [('Elza', 'Brook'), ('Spencer', 'Dwan')], [('Davante', 'Bena'), ('Elza', 'Brook'), ('Spencer', 'Dwan')], [('Davante', 'Bena'), ('Elza', 'Kaela'), ('Ovila', 'Brook'), ('Spencer', 'Dwan')]]
+algo4
+	[[('Elza', 'Brook'), ('Spencer', 'Dwan')], [('Davante', 'Bena'), ('Elza', 'Brook'), ('Spencer', 'Dwan')], [('Davante', 'Bena'), ('Elza', 'Kaela'), ('Ovila', 'Brook'), ('Spencer', 'Dwan')]]Value: 4 Iteration:3
+name1
+	['Delphine', 'Jayde', 'Kisha', 'Deasia']
+name2
+	['Kit', 'Enoch', 'Marcello', 'Fielding']
+pref1
+	{'Delphine': ['Single', ['Enoch', 'Kit', 'Marcello', 'Fielding']], 'Jayde': ['Single', ['Marcello', 'Enoch', 'Kit', 'Fielding']], 'Kisha': ['Single', ['Enoch', 'Fielding', 'Marcello', 'Kit']], 'Deasia': ['Single', ['Kit', 'Fielding', 'Marcello', 'Enoch']]}
+pref2
+	{'Kit': ['Single', ['Kisha', 'Delphine', 'Jayde', 'Deasia']], 'Enoch': ['Single', ['Delphine', 'Kisha', 'Jayde', 'Deasia']], 'Marcello': ['Single', ['Delphine', 'Deasia', 'Jayde', 'Kisha']], 'Fielding': ['Single', ['Delphine', 'Jayde', 'Deasia', 'Kisha']]}
+
+algo1
+	[[('Enoch', 'Delphine')], [('Enoch', 'Delphine'), ('Marcello', 'Jayde')], [('Enoch', 'Delphine'), ('Marcello', 'Jayde'), ('Fielding', 'Kisha')], [('Kit', 'Kisha'), ('Enoch', 'Delphine'), ('Marcello', 'Deasia'), ('Fielding', 'Jayde')]]
+algo2
+	[[('Delphine', 'Enoch')], [('Delphine', 'Enoch'), ('Jayde', 'Marcello')], [('Delphine', 'Enoch'), ('Jayde', 'Marcello'), ('Kisha', 'Fielding')], [('Delphine', 'Enoch'), ('Jayde', 'Marcello'), ('Kisha', 'Fielding'), ('Deasia', 'Kit')]]
+algo3
+	[[('Enoch', 'Delphine')], [('Enoch', 'Delphine'), ('Marcello', 'Jayde')], [('Enoch', 'Delphine'), ('Marcello', 'Jayde'), ('Fielding', 'Kisha')], [('Kit', 'Deasia'), ('Enoch', 'Delphine'), ('Marcello', 'Jayde'), ('Fielding', 'Kisha')]]
+algo4
+	[[('Kit', 'Deasia'), ('Enoch', 'Delphine'), ('Marcello', 'Jayde')], [('Kit', 'Deasia'), ('Enoch', 'Delphine'), ('Marcello', 'Jayde'), ('Fielding', 'Kisha')], [('Kit', 'Deasia'), ('Enoch', 'Delphine'), ('Marcello', 'Jayde'), ('Fielding', 'Kisha')]]Value: 4 Iteration:4
+name1
+	['Leitha', 'Ardelle', 'Olga', 'Elizbeth']
+name2
+	['Wilfredo', 'Tobias', 'Dennie', 'Delos']
+pref1
+	{'Leitha': ['Single', ['Tobias', 'Wilfredo', 'Delos', 'Dennie']], 'Ardelle': ['Single', ['Tobias', 'Delos', 'Dennie', 'Wilfredo']], 'Olga': ['Single', ['Wilfredo', 'Delos', 'Dennie', 'Tobias']], 'Elizbeth': ['Single', ['Delos', 'Dennie', 'Tobias', 'Wilfredo']]}
+pref2
+	{'Wilfredo': ['Single', ['Elizbeth', 'Ardelle', 'Leitha', 'Olga']], 'Tobias': ['Single', ['Leitha', 'Olga', 'Ardelle', 'Elizbeth']], 'Dennie': ['Single', ['Elizbeth', 'Olga', 'Ardelle', 'Leitha']], 'Delos': ['Single', ['Elizbeth', 'Olga', 'Leitha', 'Ardelle']]}
+
+algo1
+	[[('Tobias', 'Leitha')], [('Tobias', 'Leitha'), ('Delos', 'Ardelle')], [('Wilfredo', 'Olga'), ('Tobias', 'Leitha'), ('Delos', 'Ardelle')], [('Wilfredo', 'Ardelle'), ('Tobias', 'Leitha'), ('Dennie', 'Olga'), ('Delos', 'Elizbeth')]]
+algo2
+	[[('Leitha', 'Tobias')], [('Leitha', 'Tobias'), ('Ardelle', 'Delos')], [('Leitha', 'Tobias'), ('Ardelle', 'Delos'), ('Olga', 'Wilfredo')], [('Leitha', 'Tobias'), ('Ardelle', 'Dennie'), ('Olga', 'Wilfredo'), ('Elizbeth', 'Delos')]]
+algo3
+	[[('Tobias', 'Leitha')], [('Tobias', 'Leitha'), ('Delos', 'Ardelle')], [('Wilfredo', 'Olga'), ('Tobias', 'Leitha'), ('Delos', 'Ardelle')], [('Wilfredo', 'Olga'), ('Tobias', 'Leitha'), ('Dennie', 'Ardelle'), ('Delos', 'Elizbeth')]]
+algo4
+	[[('Tobias', 'Leitha'), ('Delos', 'Ardelle')], [('Wilfredo', 'Olga'), ('Tobias', 'Leitha'), ('Delos', 'Ardelle')], [('Wilfredo', 'Olga'), ('Tobias', 'Leitha'), ('Dennie', 'Ardelle'), ('Delos', 'Elizbeth')]]Value: 5 Iteration:0
+name1
+	['Melody', 'Bea', 'Lorine', 'Jadyn', 'Kimora']
+name2
+	['Rowland', 'Lesley', 'Elian', 'Clarance', 'Rock']
+pref1
+	{'Melody': ['Single', ['Clarance', 'Rowland', 'Lesley', 'Rock', 'Elian']], 'Bea': ['Single', ['Clarance', 'Rock', 'Rowland', 'Elian', 'Lesley']], 'Lorine': ['Single', ['Rock', 'Lesley', 'Elian', 'Rowland', 'Clarance']], 'Jadyn': ['Single', ['Rock', 'Lesley', 'Elian', 'Rowland', 'Clarance']], 'Kimora': ['Single', ['Lesley', 'Clarance', 'Rowland', 'Rock', 'Elian']]}
+pref2
+	{'Rowland': ['Single', ['Kimora', 'Bea', 'Melody', 'Jadyn', 'Lorine']], 'Lesley': ['Single', ['Melody', 'Kimora', 'Jadyn', 'Lorine', 'Bea']], 'Elian': ['Single', ['Kimora', 'Bea', 'Jadyn', 'Melody', 'Lorine']], 'Clarance': ['Single', ['Melody', 'Lorine', 'Jadyn', 'Bea', 'Kimora']], 'Rock': ['Single', ['Lorine', 'Melody', 'Kimora', 'Bea', 'Jadyn']]}
+
+algo1
+	[[('Clarance', 'Melody')], [('Clarance', 'Melody'), ('Rock', 'Bea')], [('Rowland', 'Bea'), ('Clarance', 'Melody'), ('Rock', 'Lorine')], [('Rowland', 'Bea'), ('Lesley', 'Jadyn'), ('Clarance', 'Melody'), ('Rock', 'Lorine')], [('Rowland', 'Bea'), ('Lesley', 'Kimora'), ('Elian', 'Jadyn'), ('Clarance', 'Melody'), ('Rock', 'Lorine')]]
+algo2
+	[[('Melody', 'Clarance')], [('Melody', 'Clarance'), ('Bea', 'Rock')], [('Melody', 'Clarance'), ('Bea', 'Rowland'), ('Lorine', 'Rock')], [('Melody', 'Clarance'), ('Bea', 'Rowland'), ('Lorine', 'Rock'), ('Jadyn', 'Lesley')], [('Melody', 'Clarance'), ('Bea', 'Rowland'), ('Lorine', 'Rock'), ('Jadyn', 'Elian'), ('Kimora', 'Lesley')]]
+algo3
+	[[('Clarance', 'Melody')], [('Clarance', 'Melody'), ('Rock', 'Bea')], [('Rowland', 'Bea'), ('Clarance', 'Melody'), ('Rock', 'Lorine')], [('Rowland', 'Bea'), ('Lesley', 'Jadyn'), ('Clarance', 'Melody'), ('Rock', 'Lorine')], [('Rowland', 'Bea'), ('Lesley', 'Kimora'), ('Elian', 'Jadyn'), ('Clarance', 'Melody'), ('Rock', 'Lorine')]]
+algo4
+	[[('Clarance', 'Melody'), ('Rock', 'Bea')], [('Rowland', 'Bea'), ('Lesley', 'Jadyn'), ('Clarance', 'Melody'), ('Rock', 'Lorine')], [('Rowland', 'Bea'), ('Lesley', 'Jadyn'), ('Clarance', 'Melody'), ('Rock', 'Lorine')], [('Rowland', 'Bea'), ('Lesley', 'Kimora'), ('Elian', 'Jadyn'), ('Clarance', 'Melody'), ('Rock', 'Lorine')]]Value: 5 Iteration:1
+name1
+	['Caitlyn', 'Vertie', 'Jazlynn', 'Ione', 'Yulisa']
+name2
+	['Russel', 'Moe', 'Jones', 'Randolf', 'Fernando']
+pref1
+	{'Caitlyn': ['Single', ['Russel', 'Moe', 'Fernando', 'Jones', 'Randolf']], 'Vertie': ['Single', ['Moe', 'Fernando', 'Jones', 'Russel', 'Randolf']], 'Jazlynn': ['Single', ['Fernando', 'Randolf', 'Jones', 'Russel', 'Moe']], 'Ione': ['Single', ['Russel', 'Jones', 'Fernando', 'Randolf', 'Moe']], 'Yulisa': ['Single', ['Moe', 'Fernando', 'Jones', 'Russel', 'Randolf']]}
+pref2
+	{'Russel': ['Single', ['Yulisa', 'Vertie', 'Ione', 'Jazlynn', 'Caitlyn']], 'Moe': ['Single', ['Jazlynn', 'Ione', 'Vertie', 'Caitlyn', 'Yulisa']], 'Jones': ['Single', ['Yulisa', 'Ione', 'Caitlyn', 'Jazlynn', 'Vertie']], 'Randolf': ['Single', ['Ione', 'Jazlynn', 'Vertie', 'Yulisa', 'Caitlyn']], 'Fernando': ['Single', ['Yulisa', 'Vertie', 'Jazlynn', 'Ione', 'Caitlyn']]}
+
+algo1
+	[[('Russel', 'Caitlyn')], [('Russel', 'Caitlyn'), ('Moe', 'Vertie')], [('Russel', 'Caitlyn'), ('Moe', 'Vertie'), ('Fernando', 'Jazlynn')], [('Russel', 'Ione'), ('Moe', 'Vertie'), ('Jones', 'Caitlyn'), ('Fernando', 'Jazlynn')], [('Russel', 'Ione'), ('Moe', 'Vertie'), ('Jones', 'Caitlyn'), ('Randolf', 'Jazlynn'), ('Fernando', 'Yulisa')]]
+algo2
+	[[('Caitlyn', 'Russel')], [('Caitlyn', 'Russel'), ('Vertie', 'Moe')], [('Caitlyn', 'Russel'), ('Vertie', 'Moe'), ('Jazlynn', 'Fernando')], [('Caitlyn', 'Jones'), ('Vertie', 'Moe'), ('Jazlynn', 'Fernando'), ('Ione', 'Russel')], [('Caitlyn', 'Jones'), ('Vertie', 'Moe'), ('Jazlynn', 'Randolf'), ('Ione', 'Russel'), ('Yulisa', 'Fernando')]]
+algo3
+	[[('Russel', 'Caitlyn')], [('Russel', 'Caitlyn'), ('Moe', 'Vertie')], [('Russel', 'Caitlyn'), ('Moe', 'Vertie'), ('Fernando', 'Jazlynn')], [('Russel', 'Ione'), ('Moe', 'Vertie'), ('Jones', 'Caitlyn'), ('Fernando', 'Jazlynn')], [('Russel', 'Ione'), ('Moe', 'Vertie'), ('Jones', 'Caitlyn'), ('Randolf', 'Jazlynn'), ('Fernando', 'Yulisa')]]
+algo4
+	[[('Russel', 'Caitlyn'), ('Moe', 'Vertie'), ('Fernando', 'Jazlynn')], [('Russel', 'Caitlyn'), ('Moe', 'Vertie'), ('Fernando', 'Jazlynn')], [('Russel', 'Ione'), ('Moe', 'Vertie'), ('Jones', 'Caitlyn'), ('Fernando', 'Jazlynn')], [('Russel', 'Ione'), ('Moe', 'Vertie'), ('Jones', 'Caitlyn'), ('Randolf', 'Jazlynn'), ('Fernando', 'Yulisa')]]Value: 5 Iteration:2
+name1
+	['Tom', 'Flossie', 'Rosalyn', 'Britny', 'Harold']
+name2
+	['Jarrett', 'Darrius', 'Hansford', 'Jerrel', 'Shep']
+pref1
+	{'Tom': ['Single', ['Darrius', 'Hansford', 'Jerrel', 'Shep', 'Jarrett']], 'Flossie': ['Single', ['Shep', 'Jarrett', 'Hansford', 'Darrius', 'Jerrel']], 'Rosalyn': ['Single', ['Darrius', 'Hansford', 'Jerrel', 'Shep', 'Jarrett']], 'Britny': ['Single', ['Shep', 'Hansford', 'Jerrel', 'Darrius', 'Jarrett']], 'Harold': ['Single', ['Darrius', 'Shep', 'Jerrel', 'Jarrett', 'Hansford']]}
+pref2
+	{'Jarrett': ['Single', ['Harold', 'Tom', 'Rosalyn', 'Flossie', 'Britny']], 'Darrius': ['Single', ['Britny', 'Tom', 'Flossie', 'Rosalyn', 'Harold']], 'Hansford': ['Single', ['Harold', 'Flossie', 'Rosalyn', 'Britny', 'Tom']], 'Jerrel': ['Single', ['Britny', 'Tom', 'Flossie', 'Rosalyn', 'Harold']], 'Shep': ['Single', ['Flossie', 'Rosalyn', 'Tom', 'Harold', 'Britny']]}
+
+algo1
+	[[('Darrius', 'Tom')], [('Darrius', 'Tom'), ('Shep', 'Flossie')], [('Darrius', 'Tom'), ('Hansford', 'Rosalyn'), ('Shep', 'Flossie')], [('Darrius', 'Tom'), ('Hansford', 'Rosalyn'), ('Jerrel', 'Britny'), ('Shep', 'Flossie')], [('Jarrett', 'Harold'), ('Darrius', 'Tom'), ('Hansford', 'Rosalyn'), ('Jerrel', 'Britny'), ('Shep', 'Flossie')]]
+algo2
+	[[('Tom', 'Darrius')], [('Tom', 'Darrius'), ('Flossie', 'Shep')], [('Tom', 'Darrius'), ('Flossie', 'Shep'), ('Rosalyn', 'Hansford')], [('Tom', 'Darrius'), ('Flossie', 'Shep'), ('Rosalyn', 'Hansford'), ('Britny', 'Jerrel')], [('Tom', 'Darrius'), ('Flossie', 'Shep'), ('Rosalyn', 'Hansford'), ('Britny', 'Jerrel'), ('Harold', 'Jarrett')]]
+algo3
+	[[('Darrius', 'Tom')], [('Darrius', 'Tom'), ('Shep', 'Flossie')], [('Darrius', 'Tom'), ('Hansford', 'Rosalyn'), ('Shep', 'Flossie')], [('Darrius', 'Tom'), ('Hansford', 'Rosalyn'), ('Jerrel', 'Britny'), ('Shep', 'Flossie')], [('Jarrett', 'Harold'), ('Darrius', 'Tom'), ('Hansford', 'Rosalyn'), ('Jerrel', 'Britny'), ('Shep', 'Flossie')]]
+algo4
+	[[('Darrius', 'Tom'), ('Shep', 'Flossie')], [('Darrius', 'Tom'), ('Hansford', 'Rosalyn'), ('Shep', 'Flossie')], [('Jarrett', 'Harold'), ('Darrius', 'Tom'), ('Hansford', 'Rosalyn'), ('Jerrel', 'Britny'), ('Shep', 'Flossie')], [('Jarrett', 'Harold'), ('Darrius', 'Tom'), ('Hansford', 'Rosalyn'), ('Jerrel', 'Britny'), ('Shep', 'Flossie')]]Value: 5 Iteration:3
+name1
+	['Robbie', 'Leatha', 'Margarite', 'Francesca', 'Vernon']
+name2
+	['Elgie', 'Eunice', 'Cordero', 'Zaid', 'Brandyn']
+pref1
+	{'Robbie': ['Single', ['Zaid', 'Brandyn', 'Eunice', 'Cordero', 'Elgie']], 'Leatha': ['Single', ['Zaid', 'Cordero', 'Brandyn', 'Elgie', 'Eunice']], 'Margarite': ['Single', ['Zaid', 'Cordero', 'Brandyn', 'Elgie', 'Eunice']], 'Francesca': ['Single', ['Elgie', 'Cordero', 'Zaid', 'Eunice', 'Brandyn']], 'Vernon': ['Single', ['Eunice', 'Zaid', 'Cordero', 'Elgie', 'Brandyn']]}
+pref2
+	{'Elgie': ['Single', ['Leatha', 'Vernon', 'Margarite', 'Francesca', 'Robbie']], 'Eunice': ['Single', ['Margarite', 'Vernon', 'Leatha', 'Robbie', 'Francesca']], 'Cordero': ['Single', ['Leatha', 'Margarite', 'Robbie', 'Vernon', 'Francesca']], 'Zaid': ['Single', ['Leatha', 'Vernon', 'Margarite', 'Francesca', 'Robbie']], 'Brandyn': ['Single', ['Robbie', 'Francesca', 'Vernon', 'Margarite', 'Leatha']]}
+
+algo1
+	[[('Zaid', 'Robbie')], [('Zaid', 'Leatha'), ('Brandyn', 'Robbie')], [('Cordero', 'Margarite'), ('Zaid', 'Leatha'), ('Brandyn', 'Robbie')], [('Elgie', 'Francesca'), ('Cordero', 'Margarite'), ('Zaid', 'Leatha'), ('Brandyn', 'Robbie')], [('Elgie', 'Francesca'), ('Eunice', 'Vernon'), ('Cordero', 'Margarite'), ('Zaid', 'Leatha'), ('Brandyn', 'Robbie')]]
+algo2
+	[[('Robbie', 'Zaid')], [('Robbie', 'Brandyn'), ('Leatha', 'Zaid')], [('Robbie', 'Brandyn'), ('Leatha', 'Zaid'), ('Margarite', 'Cordero')], [('Robbie', 'Brandyn'), ('Leatha', 'Zaid'), ('Margarite', 'Cordero'), ('Francesca', 'Elgie')], [('Robbie', 'Brandyn'), ('Leatha', 'Zaid'), ('Margarite', 'Cordero'), ('Francesca', 'Elgie'), ('Vernon', 'Eunice')]]
+algo3
+	[[('Zaid', 'Robbie')], [('Zaid', 'Leatha'), ('Brandyn', 'Robbie')], [('Cordero', 'Margarite'), ('Zaid', 'Leatha'), ('Brandyn', 'Robbie')], [('Elgie', 'Francesca'), ('Cordero', 'Margarite'), ('Zaid', 'Leatha'), ('Brandyn', 'Robbie')], [('Elgie', 'Francesca'), ('Eunice', 'Vernon'), ('Cordero', 'Margarite'), ('Zaid', 'Leatha'), ('Brandyn', 'Robbie')]]
+algo4
+	[[('Zaid', 'Leatha'), ('Brandyn', 'Robbie')], [('Elgie', 'Francesca'), ('Cordero', 'Margarite'), ('Zaid', 'Leatha'), ('Brandyn', 'Robbie')], [('Elgie', 'Francesca'), ('Cordero', 'Margarite'), ('Zaid', 'Leatha'), ('Brandyn', 'Robbie')], [('Elgie', 'Francesca'), ('Eunice', 'Vernon'), ('Cordero', 'Margarite'), ('Zaid', 'Leatha'), ('Brandyn', 'Robbie')]]Value: 5 Iteration:4
+name1
+	['Deidre', 'Avery', 'Lavon', 'Nyah', 'Regina']
+name2
+	['Harlen', 'Trent', 'Demonte', 'Ott', 'Carnell']
+pref1
+	{'Deidre': ['Single', ['Harlen', 'Ott', 'Carnell', 'Demonte', 'Trent']], 'Avery': ['Single', ['Carnell', 'Harlen', 'Ott', 'Trent', 'Demonte']], 'Lavon': ['Single', ['Harlen', 'Ott', 'Demonte', 'Carnell', 'Trent']], 'Nyah': ['Single', ['Ott', 'Harlen', 'Carnell', 'Demonte', 'Trent']], 'Regina': ['Single', ['Ott', 'Harlen', 'Carnell', 'Demonte', 'Trent']]}
+pref2
+	{'Harlen': ['Single', ['Avery', 'Lavon', 'Deidre', 'Regina', 'Nyah']], 'Trent': ['Single', ['Avery', 'Lavon', 'Deidre', 'Regina', 'Nyah']], 'Demonte': ['Single', ['Regina', 'Nyah', 'Deidre', 'Lavon', 'Avery']], 'Ott': ['Single', ['Nyah', 'Deidre', 'Lavon', 'Regina', 'Avery']], 'Carnell': ['Single', ['Avery', 'Lavon', 'Nyah', 'Regina', 'Deidre']]}
+
+algo1
+	[[('Harlen', 'Deidre')], [('Harlen', 'Deidre'), ('Carnell', 'Avery')], [('Harlen', 'Lavon'), ('Ott', 'Deidre'), ('Carnell', 'Avery')], [('Harlen', 'Lavon'), ('Demonte', 'Deidre'), ('Ott', 'Nyah'), ('Carnell', 'Avery')], [('Harlen', 'Lavon'), ('Trent', 'Deidre'), ('Demonte', 'Regina'), ('Ott', 'Nyah'), ('Carnell', 'Avery')]]
+algo2
+	[[('Deidre', 'Harlen')], [('Deidre', 'Harlen'), ('Avery', 'Carnell')], [('Deidre', 'Ott'), ('Avery', 'Carnell'), ('Lavon', 'Harlen')], [('Deidre', 'Demonte'), ('Avery', 'Carnell'), ('Lavon', 'Harlen'), ('Nyah', 'Ott')], [('Deidre', 'Trent'), ('Avery', 'Carnell'), ('Lavon', 'Harlen'), ('Nyah', 'Ott'), ('Regina', 'Demonte')]]
+algo3
+	[[('Harlen', 'Deidre')], [('Harlen', 'Deidre'), ('Carnell', 'Avery')], [('Harlen', 'Lavon'), ('Ott', 'Deidre'), ('Carnell', 'Avery')], [('Harlen', 'Lavon'), ('Demonte', 'Deidre'), ('Ott', 'Nyah'), ('Carnell', 'Avery')], [('Harlen', 'Lavon'), ('Trent', 'Deidre'), ('Demonte', 'Regina'), ('Ott', 'Nyah'), ('Carnell', 'Avery')]]
+algo4
+	[[('Harlen', 'Deidre'), ('Carnell', 'Avery')], [('Harlen', 'Lavon'), ('Ott', 'Deidre'), ('Carnell', 'Avery')], [('Harlen', 'Lavon'), ('Demonte', 'Deidre'), ('Ott', 'Nyah'), ('Carnell', 'Avery')], [('Harlen', 'Lavon'), ('Trent', 'Deidre'), ('Demonte', 'Regina'), ('Ott', 'Nyah'), ('Carnell', 'Avery')]]
